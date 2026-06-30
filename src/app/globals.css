@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+:root {
+  --navy-900: #0a2342;
+  --navy-800: #133054;
+  --navy-950: #051428;
+  --gold-500: #c9a227;
+  --gold-400: #dcb33c;
+  --gold-600: #b08d1e;
+  --soft-white: #f8fafc;
+  --dark-slate: #1e293b;
+  --emerald-success: #0f766e;
+
+  --background: #f8fafc;
+  --foreground: #1e293b;
+}
+
+/* Dark mode overrides */
+.dark {
+  --background: #051428;
+  --foreground: #f8fafc;
+}
+
+@theme {
+  --color-navy-900: var(--navy-900);
+  --color-navy-800: var(--navy-800);
+  --color-navy-950: var(--navy-950);
+  --color-gold-500: var(--gold-500);
+  --color-gold-400: var(--gold-400);
+  --color-gold-600: var(--gold-600);
+  --color-soft-white: var(--soft-white);
+  --color-dark-slate: var(--dark-slate);
+  --color-emerald-success: var(--emerald-success);
+
+  --font-sans: var(--font-inter), var(--font-cairo), system-ui, -apple-system, sans-serif;
+  --font-arabic: var(--font-cairo), sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  overflow-x: hidden;
+}
+
+/* Force Cairo font for all Arabic/RTL elements to avoid fallback issues */
+html[dir="rtl"],
+html[dir="rtl"] body,
+html[dir="rtl"] * {
+  font-family: var(--font-cairo), sans-serif !important;
+}
+
+/* Custom premium styles */
+.glass-nav {
+  background: rgba(10, 35, 66, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(201, 162, 39, 0.2);
+}
+
+.glass-nav-light {
+  background: rgba(248, 250, 252, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(10, 35, 66, 0.1);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(10, 35, 66, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark .glass-card {
+  background: rgba(19, 48, 84, 0.5);
+  border: 1px solid rgba(201, 162, 39, 0.15);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #c9a227 0%, #f3e5ab 50%, #b08d1e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navy-gradient {
+  background: linear-gradient(135deg, #0a2342 0%, #051428 100%);
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #c9a227 0%, #b08d1e 100%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #051428;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0a2342;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c9a227;
+}
+
+/* RTL-aware spacing transitions */
+.rtl-flip {
+  transform: scaleX(-1);
+}
