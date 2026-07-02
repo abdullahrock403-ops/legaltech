@@ -28,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className={`${inter.variable} ${cairo.variable}`}>
-      <body className="antialiased min-h-screen bg-soft-white text-dark-slate font-sans flex flex-col justify-between">
+    <html className={`${inter.variable} ${cairo.variable} dark`}>
+      <body className="antialiased min-h-screen bg-navy-950 text-slate-100 font-sans flex flex-col justify-between">
         <Providers>
           <Navbar />
           <main className="flex-grow">
