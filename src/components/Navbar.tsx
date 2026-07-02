@@ -52,16 +52,16 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-1 lg:space-x-2 xl:space-x-6">
-            <div className={`flex items-center ${isRtl ? "space-x-reverse space-x-6" : "space-x-6"}`}>
+          {/* Navigation Links (Visible on all devices, scrollable if space is tight) */}
+          <nav className="flex items-center overflow-x-auto no-scrollbar py-1 space-x-3 sm:space-x-6 mx-2 max-w-[40vw] sm:max-w-none">
+            <div className={`flex items-center ${isRtl ? "space-x-reverse space-x-3 sm:space-x-6" : "space-x-3 sm:space-x-6"}`}>
               {navItems.map((item) => {
                 const isActive = pathname === item.href;
                 return (
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`text-sm font-semibold tracking-wide transition-colors relative py-2 group ${
+                    className={`text-[10px] sm:text-sm font-semibold tracking-wide transition-colors relative py-1.5 whitespace-nowrap group ${
                       scrolled || !isHome
                         ? isActive
                           ? "text-gold-400 font-bold"
@@ -79,46 +79,36 @@ export default function Navbar() {
             </div>
           </nav>
 
-          {/* Action buttons (Language switcher & CTA) */}
-          <div className="hidden lg:flex items-center space-x-4 rtl:space-x-reverse">
+          {/* Action buttons (Language switcher & CTA - Visible on all devices) */}
+          <div className="flex items-center space-x-1.5 sm:space-x-3 rtl:space-x-reverse">
             <button
               onClick={toggleLanguage}
-              className={`flex items-center space-x-1 rtl:space-x-reverse text-sm font-semibold px-3 py-2 rounded-full border transition-all duration-300 ${
+              className={`flex items-center space-x-1 rtl:space-x-reverse text-[10px] sm:text-sm font-semibold px-2 py-1 sm:px-3 sm:py-2 rounded-full border transition-all duration-300 ${
                 scrolled || !isHome
                   ? "text-slate-200 border-slate-700 hover:border-gold-500 hover:text-gold-400"
                   : "text-white border-white/20 hover:border-gold-500 hover:text-gold-400"
               }`}
             >
-              <Globe className="w-4 h-4" />
-              <span>{language === "en" ? "العربية" : "English"}</span>
+              <Globe className="w-3 h-3 sm:w-4 sm:h-4" />
+              <span className="hidden xs:inline">{language === "en" ? "العربية" : "English"}</span>
             </button>
 
             <Link
               href="/booking"
-              className="flex items-center space-x-2 rtl:space-x-reverse px-5 py-2.5 rounded-full text-sm font-bold tracking-wide uppercase transition-all duration-300 transform hover:-translate-y-0.5 gold-gradient-bg text-navy-900 hover:shadow-lg hover:shadow-gold-500/20"
+              className="flex items-center space-x-1.5 rtl:space-x-reverse px-2.5 py-1.5 sm:px-4 sm:py-2 rounded-full text-[10px] sm:text-xs md:text-sm font-bold tracking-wide uppercase transition-all duration-300 transform hover:-translate-y-0.5 gold-gradient-bg text-navy-900 hover:shadow-lg hover:shadow-gold-500/20 whitespace-nowrap"
             >
-              <PhoneCall className="w-4 h-4" />
+              <PhoneCall className="w-3 h-3 sm:w-4 sm:h-4" />
               <span>{t("nav_book_btn")}</span>
             </Link>
-          </div>
 
-          {/* Mobile Menu Button */}
-          <div className="flex lg:hidden items-center space-x-2 rtl:space-x-reverse">
-            <button
-              onClick={toggleLanguage}
-              className={`p-2 rounded-full border transition-all duration-300 ${
-                scrolled || !isHome ? "text-slate-200 border-slate-700" : "text-white border-white/20"
-              }`}
-            >
-              <Globe className="w-5 h-5" />
-            </button>
+            {/* Mobile Menu Trigger (☰) */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`p-2 rounded-md transition-colors ${
+              className={`lg:hidden p-1.5 sm:p-2 rounded-md transition-colors ${
                 scrolled || !isHome ? "text-slate-200 hover:text-white" : "text-white hover:text-gold-400"
               }`}
             >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
             </button>
           </div>
         </div>

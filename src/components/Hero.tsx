@@ -18,7 +18,7 @@ export default function Hero() {
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/hero-bg.jpg')" }}
       />
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-navy-950/65 via-navy-900/55 to-navy-950/65 backdrop-blur-[1px]" />
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-navy-950/45 via-navy-900/35 to-navy-950/45 md:from-navy-950/65 md:via-navy-900/55 md:to-navy-950/65 backdrop-blur-[1px]" />
 
       {/* Hero Content Container */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-8">
