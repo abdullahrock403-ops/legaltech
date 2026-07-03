@@ -4,6 +4,7 @@ import React from "react";
 import { useLanguage } from "./LanguageContext";
 import { motion } from "framer-motion";
 import { Calendar, Compass } from "lucide-react";
+import Link from "next/link";
 
 export default function Hero() {
   const { t, isRtl } = useLanguage();
@@ -49,13 +50,13 @@ export default function Hero() {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-            <a
-              href="#booking"
+            <Link
+              href="/booking"
               className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 rtl:space-x-reverse px-8 py-4 rounded-full text-base font-bold tracking-wide uppercase gold-gradient-bg text-navy-900 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:shadow-gold-500/20"
             >
               <Calendar className="w-5 h-5" />
               <span>{t("hero_cta_book")}</span>
-            </a>
+            </Link>
             <a
               href="#services"
               className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 rtl:space-x-reverse px-8 py-4 rounded-full text-base font-bold tracking-wide uppercase border border-white/20 hover:border-gold-500 bg-white/5 hover:bg-white/10 text-white transition-all duration-300 transform hover:-translate-y-1"

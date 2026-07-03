@@ -6,7 +6,6 @@ import Hero from "@/components/Hero";
 import Highlights from "@/components/Highlights";
 import Services from "@/components/Services";
 import WhyChooseUs from "@/components/WhyChooseUs";
-import Testimonials from "@/components/Testimonials";
 import { CalendarDays, ArrowRight, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 
@@ -26,9 +25,6 @@ export default function Home() {
 
       {/* Why Choose Us Summary */}
       <WhyChooseUs />
-
-      {/* Client Testimonials */}
-      <Testimonials />
 
       {/* Home Call to Action */}
       <section className="py-20 navy-gradient text-white relative overflow-hidden">
