@@ -203,7 +203,7 @@ export default function AboutPage() {
           <div className="flex-shrink-0 bg-white/5 border border-white/10 px-8 py-6 rounded-2xl text-center">
             <span className="block text-xs text-slate-400 uppercase tracking-widest font-semibold">DET Status</span>
             <span className="block text-2xl font-black text-gold-500 mt-1">ACTIVE</span>
-            <span className="block text-[10px] text-slate-500 mt-2 font-mono">Reg No: 981254</span>
+            <span className="block text-[10px] text-slate-500 mt-2 font-mono">Reg No: 4430091.01</span>
           </div>
         </section>
 
