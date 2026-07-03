@@ -368,8 +368,8 @@ export const translations: TranslationDictionary = {
     ar: "+971 4 123 4567",
   },
   contact_email: {
-    en: "info@experts-legal.ae",
-    ar: "info@experts-legal.ae",
+    en: "expertlegaldeptcollection@gmail.com",
+    ar: "expertlegaldeptcollection@gmail.com",
   },
   contact_hours: {
     en: "Monday - Friday: 9:00 AM - 6:00 PM",
