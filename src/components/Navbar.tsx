@@ -30,7 +30,7 @@ export default function Navbar() {
     { name: t("nav_home"), href: "/" },
     { name: t("nav_about"), href: "/about" },
     { name: t("nav_services"), href: "/services" },
-    { name: t("nav_contact"), href: "/contact" },
+    { name: t("nav_book_btn"), href: "/booking" },
   ];
 
   return (

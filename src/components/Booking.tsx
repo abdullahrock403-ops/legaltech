@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { useLanguage } from "./LanguageContext";
 import { motion, AnimatePresence } from "framer-motion";
-import { CalendarRange, Sparkles, Send } from "lucide-react";
+import { CalendarRange, Sparkles, Send, MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const timeSlots = {
   AM: ["09:00 AM", "09:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM"],
@@ -318,6 +318,87 @@ export default function Booking() {
               </motion.div>
             )}
           </AnimatePresence>
+        </div>
+
+        {/* Contact info cards grid and Google Map */}
+        <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Grid of contact details */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {/* Address */}
+            <div className="p-6 rounded-2xl bg-white border border-slate-200/60 shadow-lg flex items-start space-x-4 rtl:space-x-reverse">
+              <div className="p-3 rounded-xl bg-navy-900 text-gold-500 flex-shrink-0">
+                <MapPin className="w-5 h-5" />
+              </div>
+              <div>
+                <h4 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-1">
+                  Suite Address
+                </h4>
+                <p className="text-sm font-extrabold text-navy-900 leading-relaxed">
+                  {t("contact_office_address")}
+                </p>
+              </div>
+            </div>
+
+            {/* Telephone */}
+            <div className="p-6 rounded-2xl bg-white border border-slate-200/60 shadow-lg flex items-start space-x-4 rtl:space-x-reverse">
+              <div className="p-3 rounded-xl bg-navy-900 text-gold-500 flex-shrink-0">
+                <Phone className="w-5 h-5" />
+              </div>
+              <div>
+                <h4 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-1">
+                  Telephone
+                </h4>
+                <p className="text-sm font-extrabold text-navy-900 leading-relaxed">
+                  {t("contact_phone")}
+                </p>
+              </div>
+            </div>
+
+            {/* Email */}
+            <div className="p-6 rounded-2xl bg-white border border-slate-200/60 shadow-lg flex items-start space-x-4 rtl:space-x-reverse">
+              <div className="p-3 rounded-xl bg-navy-900 text-gold-500 flex-shrink-0">
+                <Mail className="w-5 h-5" />
+              </div>
+              <div>
+                <h4 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-1">
+                  Corporate Email
+                </h4>
+                <p className="text-sm font-extrabold text-navy-900 leading-relaxed">
+                  {t("contact_email")}
+                </p>
+              </div>
+            </div>
+
+            {/* Business Hours */}
+            <div className="p-6 rounded-2xl bg-white border border-slate-200/60 shadow-lg flex items-start space-x-4 rtl:space-x-reverse">
+              <div className="p-3 rounded-xl bg-navy-900 text-gold-500 flex-shrink-0">
+                <Clock className="w-5 h-5" />
+              </div>
+              <div>
+                <h4 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-1">
+                  Business Hours
+                </h4>
+                <p className="text-sm font-extrabold text-navy-900 leading-relaxed">
+                  {t("contact_hours")}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Embedded Google Map */}
+          <div className="h-64 sm:h-auto min-h-[300px] w-full rounded-3xl overflow-hidden border border-slate-200/60 shadow-lg relative">
+            <iframe
+              title="Office Location Map"
+              src="https://maps.google.com/maps?q=SPC%20Free%20Zone,%20Sharjah&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="grayscale dark:invert"
+            />
+          </div>
         </div>
       </div>
     </section>

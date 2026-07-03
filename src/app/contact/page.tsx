@@ -1,15 +1,14 @@
 "use client";
 
-import React from "react";
-import Contact from "@/components/Contact";
-import PageWrapper from "@/components/PageWrapper";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function ContactPage() {
-  return (
-    <PageWrapper>
-      <div className="pt-24">
-        <Contact />
-      </div>
-    </PageWrapper>
-  );
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace("/booking");
+  }, [router]);
+
+  return null;
 }
