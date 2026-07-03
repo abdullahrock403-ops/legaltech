@@ -66,7 +66,7 @@ export default function Booking() {
       <div className="absolute top-1/4 right-0 w-80 h-80 rounded-full bg-gold-500/5 blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-navy-900/10 blur-[150px] pointer-events-none" />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.div
@@ -90,7 +90,7 @@ export default function Booking() {
         </div>
 
         {/* Booking Card */}
-        <div className="bg-white dark:bg-navy-900 border border-slate-100 dark:border-gold-500/10 rounded-3xl p-8 sm:p-12 shadow-2xl">
+        <div className="max-w-4xl mx-auto bg-white dark:bg-navy-900 border border-slate-100 dark:border-gold-500/10 rounded-3xl p-8 sm:p-12 shadow-2xl">
           <AnimatePresence mode="wait">
             {!isSubmitted ? (
               <motion.form
@@ -320,10 +320,9 @@ export default function Booking() {
           </AnimatePresence>
         </div>
 
-        {/* Contact info cards grid and Google Map */}
-        <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+        <div className="mt-16 grid grid-cols-1 lg:grid-cols-[1.6fr_1fr] gap-8 items-stretch">
           {/* Grid of contact details */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-stretch">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-stretch auto-rows-fr">
             {/* Address */}
             <div className="p-6 rounded-2xl bg-white border border-slate-200/60 shadow-lg flex items-start space-x-4 rtl:space-x-reverse h-full">
               <div className="p-3 rounded-xl bg-navy-900 text-gold-500 flex-shrink-0">
