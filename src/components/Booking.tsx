@@ -321,64 +321,64 @@ export default function Booking() {
         </div>
 
         {/* Contact info cards grid and Google Map */}
-        <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
           {/* Grid of contact details */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-stretch">
             {/* Address */}
-            <div className="p-6 rounded-2xl bg-white border border-slate-200/60 shadow-lg flex items-start space-x-4 rtl:space-x-reverse">
+            <div className="p-6 rounded-2xl bg-white border border-slate-200/60 shadow-lg flex items-start space-x-4 rtl:space-x-reverse h-full">
               <div className="p-3 rounded-xl bg-navy-900 text-gold-500 flex-shrink-0">
                 <MapPin className="w-5 h-5" />
               </div>
-              <div>
-                <h4 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-1">
+              <div className="space-y-1">
+                <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">
                   Suite Address
                 </h4>
-                <p className="text-sm font-extrabold text-navy-900 leading-relaxed">
+                <p className="text-xs sm:text-sm font-extrabold text-navy-900 leading-relaxed">
                   {t("contact_office_address")}
                 </p>
               </div>
             </div>
 
             {/* Telephone */}
-            <div className="p-6 rounded-2xl bg-white border border-slate-200/60 shadow-lg flex items-start space-x-4 rtl:space-x-reverse">
+            <div className="p-6 rounded-2xl bg-white border border-slate-200/60 shadow-lg flex items-start space-x-4 rtl:space-x-reverse h-full">
               <div className="p-3 rounded-xl bg-navy-900 text-gold-500 flex-shrink-0">
                 <Phone className="w-5 h-5" />
               </div>
-              <div>
-                <h4 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-1">
+              <div className="space-y-1">
+                <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">
                   Telephone
                 </h4>
-                <p className="text-sm font-extrabold text-navy-900 leading-relaxed">
+                <p className="text-xs sm:text-sm font-extrabold text-navy-900 leading-relaxed">
                   {t("contact_phone")}
                 </p>
               </div>
             </div>
 
             {/* Email */}
-            <div className="p-6 rounded-2xl bg-white border border-slate-200/60 shadow-lg flex items-start space-x-4 rtl:space-x-reverse">
+            <div className="p-6 rounded-2xl bg-white border border-slate-200/60 shadow-lg flex items-start space-x-4 rtl:space-x-reverse h-full">
               <div className="p-3 rounded-xl bg-navy-900 text-gold-500 flex-shrink-0">
                 <Mail className="w-5 h-5" />
               </div>
-              <div>
-                <h4 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-1">
+              <div className="space-y-1">
+                <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">
                   Corporate Email
                 </h4>
-                <p className="text-sm font-extrabold text-navy-900 leading-relaxed">
+                <p className="text-xs sm:text-sm font-extrabold text-navy-900 leading-relaxed">
                   {t("contact_email")}
                 </p>
               </div>
             </div>
 
             {/* Business Hours */}
-            <div className="p-6 rounded-2xl bg-white border border-slate-200/60 shadow-lg flex items-start space-x-4 rtl:space-x-reverse">
+            <div className="p-6 rounded-2xl bg-white border border-slate-200/60 shadow-lg flex items-start space-x-4 rtl:space-x-reverse h-full">
               <div className="p-3 rounded-xl bg-navy-900 text-gold-500 flex-shrink-0">
                 <Clock className="w-5 h-5" />
               </div>
-              <div>
-                <h4 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-1">
+              <div className="space-y-1">
+                <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">
                   Business Hours
                 </h4>
-                <p className="text-sm font-extrabold text-navy-900 leading-relaxed">
+                <p className="text-xs sm:text-sm font-extrabold text-navy-900 leading-relaxed">
                   {t("contact_hours")}
                 </p>
               </div>
@@ -386,7 +386,7 @@ export default function Booking() {
           </div>
 
           {/* Embedded Google Map */}
-          <div className="h-64 sm:h-auto min-h-[300px] w-full rounded-3xl overflow-hidden border border-slate-200/60 shadow-lg relative">
+          <div className="min-h-[300px] lg:min-h-full h-full w-full rounded-3xl overflow-hidden border border-slate-200/60 shadow-lg relative">
             <iframe
               title="Office Location Map"
               src="https://maps.google.com/maps?q=SPC%20Free%20Zone,%20Sharjah&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -396,7 +396,7 @@ export default function Booking() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              className="grayscale dark:invert"
+              className="grayscale dark:invert absolute inset-0"
             />
           </div>
         </div>
