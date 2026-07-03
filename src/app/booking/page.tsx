@@ -7,7 +7,7 @@ import PageWrapper from "@/components/PageWrapper";
 export default function BookingPage() {
   return (
     <PageWrapper>
-      <div className="pt-24">
+      <div className="pt-32 sm:pt-36">
         <Booking />
       </div>
     </PageWrapper>

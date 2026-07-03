@@ -348,7 +348,7 @@ export default function Booking() {
                   Telephone
                 </h4>
                 <p className="text-xs sm:text-sm font-extrabold text-navy-900 leading-relaxed break-words">
-                  {t("contact_phone")}
+                  <span dir="ltr" className="inline-block" style={{ unicodeBidi: "embed" }}>{t("contact_phone")}</span>
                 </p>
               </div>
             </div>
@@ -363,7 +363,7 @@ export default function Booking() {
                   Corporate Email
                 </h4>
                 <p className="text-xs sm:text-sm font-extrabold text-navy-900 leading-relaxed break-all">
-                  {t("contact_email")}
+                  <span dir="ltr" className="inline-block" style={{ unicodeBidi: "embed" }}>{t("contact_email")}</span>
                 </p>
               </div>
             </div>

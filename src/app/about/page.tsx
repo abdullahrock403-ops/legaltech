@@ -45,7 +45,7 @@ export default function AboutPage() {
 
   return (
     <PageWrapper>
-      <div className="bg-soft-white min-h-screen pt-24 pb-20">
+      <div className="bg-soft-white min-h-screen pt-32 sm:pt-36 pb-20">
       {/* About Hero Header */}
       <section className="relative py-24 navy-gradient text-white overflow-hidden">
         <div className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-20" style={{ backgroundImage: "url('/hero-bg.jpg')" }} />
@@ -68,9 +68,13 @@ export default function AboutPage() {
               {t("about_overview_text")}
             </p>
             <div className="p-6 bg-navy-900/5 dark:bg-gold-500/5 rounded-2xl border border-navy-900/5 dark:border-gold-500/10">
-              <h4 className="font-bold text-navy-900 mb-2">Our Business Philosophy</h4>
-              <p className="text-sm text-slate-500 leading-relaxed font-light">
-                We believe legal safeguards should never block entrepreneurial speed. By coordinating corporate brokerage, marketing compliance, logistics, Golden Visa immigration, and tax readiness under one digital roof, we enable businesses to execute with speed and complete peace of mind.
+              <h4 className="font-bold text-navy-900 dark:text-gold-500 mb-2">
+                {isRtl ? "فلسفة عملنا" : "Our Business Philosophy"}
+              </h4>
+              <p className="text-sm text-slate-500 dark:text-slate-300 leading-relaxed font-light">
+                {isRtl
+                  ? "نحن نؤمن بأن الحماية القانونية لا ينبغي أن تعوق سرعة رواد الأعمال. من خلال تنسيق استشارات تأسيس الشركات، الامتثال للتسويق، الخدمات اللوجستية، تأشيرة الإقامة الذهبية، والاستعداد الضريبي تحت مظلة رقمية واحدة، فإننا نساعد الشركات على الأداء والنمو بثقة وأمان تام."
+                  : "We believe legal safeguards should never block entrepreneurial speed. By coordinating corporate brokerage, marketing compliance, logistics, Golden Visa immigration, and tax readiness under one digital roof, we enable businesses to execute with speed and complete peace of mind."}
               </p>
             </div>
           </motion.div>

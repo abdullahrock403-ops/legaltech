@@ -282,7 +282,7 @@ export default function Services({ preview = false }: ServicesProps) {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-3xl sm:text-5xl font-extrabold text-navy-900 dark:text-white mb-4">
-              {preview ? "Featured Advisory Services" : t("services_title")}
+              {preview ? (isRtl ? "خدماتنا الاستشارية المتميزة" : "Featured Advisory Services") : t("services_title")}
             </h2>
             <p className="text-base sm:text-lg text-slate-500 dark:text-slate-300 leading-relaxed">
               {t("services_subtitle")}
@@ -334,7 +334,7 @@ export default function Services({ preview = false }: ServicesProps) {
               href="/services"
               className="inline-flex items-center space-x-2 rtl:space-x-reverse px-8 py-4 rounded-full text-sm font-bold uppercase gold-gradient-bg text-navy-900 shadow-lg hover:shadow-gold-500/20 transition-all duration-300 transform hover:-translate-y-0.5"
             >
-              <span>Explore Our Full Services Portfolio</span>
+              <span>{isRtl ? "استكشف محفظة خدماتنا الكاملة" : "Explore Our Full Services Portfolio"}</span>
               {isRtl ? <ArrowLeft className="w-4 h-4" /> : <ArrowRight className="w-4 h-4" />}
             </Link>
           </div>

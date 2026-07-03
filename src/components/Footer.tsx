@@ -6,7 +6,7 @@ import { Send, ArrowUp } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
-  const { t } = useLanguage();
+  const { t, isRtl } = useLanguage();
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
 
@@ -80,13 +80,13 @@ export default function Footer() {
           {/* Column 3: Legal Policy Links */}
           <div className="space-y-6">
             <h4 className="text-sm font-bold uppercase tracking-wider text-gold-500">
-              Legal Info
+              {isRtl ? "معلومات قانونية" : "Legal Info"}
             </h4>
             <ul className="space-y-4 text-sm text-slate-400">
               <li><a href="#privacy" className="hover:text-gold-500 transition-colors">{t("footer_privacy")}</a></li>
               <li><a href="#terms" className="hover:text-gold-500 transition-colors">{t("footer_terms")}</a></li>
-              <li><a href="#disclaimer" className="hover:text-gold-500 transition-colors">Regulatory Disclaimer</a></li>
-              <li><a href="#credentials" className="hover:text-gold-500 transition-colors">Company Credentials</a></li>
+              <li><a href="#disclaimer" className="hover:text-gold-500 transition-colors">{isRtl ? "إخلاء المسؤولية التنظيمية" : "Regulatory Disclaimer"}</a></li>
+              <li><a href="#credentials" className="hover:text-gold-500 transition-colors">{isRtl ? "وثائق اعتماد الشركة" : "Company Credentials"}</a></li>
             </ul>
           </div>
 
@@ -96,7 +96,7 @@ export default function Footer() {
               {t("footer_newsletter")}
             </h4>
             <p className="text-xs text-slate-400 leading-relaxed font-light">
-              Get corporate regulatory alerts and compliance update digests in your inbox.
+              {isRtl ? "احصل على تنبيهات تنظيمية للشركات وملخصات تحديثات الامتثال في صندوق الوارد الخاص بك." : "Get corporate regulatory alerts and compliance update digests in your inbox."}
             </p>
             <form onSubmit={handleSubscribe} className="flex flex-col space-y-3">
               <input

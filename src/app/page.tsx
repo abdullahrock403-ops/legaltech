@@ -32,10 +32,12 @@ export default function Home() {
         
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-8">
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight">
-            Protect Your Business & Secure Your Rights Today
+            {isRtl ? "احمِ عملك واضمن حقوقك اليوم" : "Protect Your Business & Secure Your Rights Today"}
           </h2>
           <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed font-light">
-            Our multi-disciplinary experts are ready to construct a custom legal and commercial framework to support your corporate growth in the UAE.
+            {isRtl
+              ? "خبراؤنا متعددو التخصصات مستعدون لبناء إطار قانوني وتجاري مخصص لدعم نمو شركتك في دولة الإمارات العربية المتحدة."
+              : "Our multi-disciplinary experts are ready to construct a custom legal and commercial framework to support your corporate growth in the UAE."}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
             <Link
@@ -46,10 +48,10 @@ export default function Home() {
               <span>{t("hero_cta_book")}</span>
             </Link>
             <Link
-              href="/contact"
+              href="/booking"
               className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 rtl:space-x-reverse px-8 py-4 rounded-full text-base font-bold tracking-wide uppercase border border-white/20 hover:border-gold-500 bg-white/5 hover:bg-white/10 text-white transition-all duration-300 transform hover:-translate-y-1"
             >
-              <span>{t("nav_contact")}</span>
+              <span>{t("nav_book_btn")}</span>
               {isRtl ? <ArrowLeft className="w-4 h-4" /> : <ArrowRight className="w-4 h-4" />}
             </Link>
           </div>
