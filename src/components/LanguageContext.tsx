@@ -360,8 +360,8 @@ export const translations: TranslationDictionary = {
     ar: "تواصل معنا عبر القنوات الرقمية أو تفضل بزيارة جناحنا الرئيسي.",
   },
   contact_office_address: {
-    en: "Central Business District, Dubai, United Arab Emirates",
-    ar: "منطقة الأعمال المركزية، دبي، الإمارات العربية المتحدة",
+    en: "SPC Free Zone, Sheikh Mohammed Bin Zayed Road, Al Zahia, Sharjah, United Arab Emirates",
+    ar: "\"المنطقة الحرة لمدينة الشارقة للنشر\" (SPC Free Zone) - شارع محمد بن زايد - منطقة الزاهية",
   },
   contact_phone: {
     en: "+971 4 123 4567",

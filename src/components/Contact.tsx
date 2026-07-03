@@ -192,7 +192,7 @@ export default function Contact() {
             <div className="h-64 sm:h-80 w-full rounded-3xl overflow-hidden border border-slate-100 dark:border-gold-500/10 shadow-lg relative">
               <iframe
                 title="Office Location Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14436.562479509205!2d55.27218774888062!3d25.232230489955375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a6d1257%3s0x3e5f43348a6d1257!2sDowntown%20Dubai%20-%20Dubai!5e0!3m2!1sen!2sae!4v1700000000000!5m2!1sen!2sae"
+                src="https://maps.google.com/maps?q=SPC%20Free%20Zone,%20Sharjah&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
