@@ -47,22 +47,26 @@ export default function Booking() {
 
     try {
       const payload = {
-        name: formData.name,
+        fullName: formData.name,
         email: formData.email,
         phone: formData.phone,
         category: formData.category,
-        date: formData.date,
-        time: formData.time,
+        preferredDate: formData.date,
+        preferredTime: formData.time,
         message: formData.message,
       };
 
-      await fetch("https://script.google.com/macros/s/AKfycbwvVp3seXyJUdtTMvf32WfL8wlmlbBW2cZwzWLspTo4VXx8VEbErAbZchIsgIodJ6Bd/exec", {
+      const response = await fetch("/api/booking", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(payload),
       });
+
+      if (!response.ok) {
+        throw new Error(`Server proxy error: ${response.status}`);
+      }
 
       setLoading(false);
       setIsSubmitted(true);
@@ -76,7 +80,7 @@ export default function Booking() {
         message: "",
       });
     } catch (error) {
-      console.error("Apps Script submission failed:", error);
+      console.error("Apps Script proxy submission failed:", error);
       setLoading(false);
       // Show success screen as fallback to keep user flow smooth
       setIsSubmitted(true);
