@@ -324,60 +324,60 @@ export default function Booking() {
           {/* Grid of contact details */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-stretch auto-rows-fr">
             {/* Address */}
-            <div className="p-6 rounded-2xl bg-white border border-slate-200/60 shadow-lg flex items-start space-x-4 rtl:space-x-reverse h-full">
+            <div className="p-6 rounded-2xl bg-white border border-slate-200/60 shadow-lg flex items-start space-x-4 rtl:space-x-reverse h-full overflow-hidden">
               <div className="p-3 rounded-xl bg-navy-900 text-gold-500 flex-shrink-0">
                 <MapPin className="w-5 h-5" />
               </div>
-              <div className="space-y-1">
+              <div className="space-y-1 min-w-0 flex-1">
                 <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">
                   Suite Address
                 </h4>
-                <p className="text-xs sm:text-sm font-extrabold text-navy-900 leading-relaxed">
+                <p className="text-xs sm:text-sm font-extrabold text-navy-900 leading-relaxed break-words">
                   {t("contact_office_address")}
                 </p>
               </div>
             </div>
 
             {/* Telephone */}
-            <div className="p-6 rounded-2xl bg-white border border-slate-200/60 shadow-lg flex items-start space-x-4 rtl:space-x-reverse h-full">
+            <div className="p-6 rounded-2xl bg-white border border-slate-200/60 shadow-lg flex items-start space-x-4 rtl:space-x-reverse h-full overflow-hidden">
               <div className="p-3 rounded-xl bg-navy-900 text-gold-500 flex-shrink-0">
                 <Phone className="w-5 h-5" />
               </div>
-              <div className="space-y-1">
+              <div className="space-y-1 min-w-0 flex-1">
                 <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">
                   Telephone
                 </h4>
-                <p className="text-xs sm:text-sm font-extrabold text-navy-900 leading-relaxed">
+                <p className="text-xs sm:text-sm font-extrabold text-navy-900 leading-relaxed break-words">
                   {t("contact_phone")}
                 </p>
               </div>
             </div>
 
             {/* Email */}
-            <div className="p-6 rounded-2xl bg-white border border-slate-200/60 shadow-lg flex items-start space-x-4 rtl:space-x-reverse h-full">
+            <div className="p-6 rounded-2xl bg-white border border-slate-200/60 shadow-lg flex items-start space-x-4 rtl:space-x-reverse h-full overflow-hidden">
               <div className="p-3 rounded-xl bg-navy-900 text-gold-500 flex-shrink-0">
                 <Mail className="w-5 h-5" />
               </div>
-              <div className="space-y-1">
+              <div className="space-y-1 min-w-0 flex-1">
                 <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">
                   Corporate Email
                 </h4>
-                <p className="text-xs sm:text-sm font-extrabold text-navy-900 leading-relaxed">
+                <p className="text-xs sm:text-sm font-extrabold text-navy-900 leading-relaxed break-all">
                   {t("contact_email")}
                 </p>
               </div>
             </div>
 
             {/* Business Hours */}
-            <div className="p-6 rounded-2xl bg-white border border-slate-200/60 shadow-lg flex items-start space-x-4 rtl:space-x-reverse h-full">
+            <div className="p-6 rounded-2xl bg-white border border-slate-200/60 shadow-lg flex items-start space-x-4 rtl:space-x-reverse h-full overflow-hidden">
               <div className="p-3 rounded-xl bg-navy-900 text-gold-500 flex-shrink-0">
                 <Clock className="w-5 h-5" />
               </div>
-              <div className="space-y-1">
+              <div className="space-y-1 min-w-0 flex-1">
                 <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">
                   Business Hours
                 </h4>
-                <p className="text-xs sm:text-sm font-extrabold text-navy-900 leading-relaxed">
+                <p className="text-xs sm:text-sm font-extrabold text-navy-900 leading-relaxed break-words">
                   {t("contact_hours")}
                 </p>
               </div>
