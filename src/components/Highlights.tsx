@@ -6,7 +6,7 @@ import { ShieldCheck, UserCheck, Lock, Zap, TrendingUp } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Highlights() {
-  const { t } = useLanguage();
+  const { t, isRtl } = useLanguage();
 
   const highlightList = [
     {
@@ -14,35 +14,35 @@ export default function Highlights() {
       desc: t("highlight_1_desc"),
       icon: ShieldCheck,
       stat: "100%",
-      statDesc: "Licensed Provider",
+      statDesc: isRtl ? "ترخيص معتمد" : "Licensed Provider",
     },
     {
       title: t("highlight_2_title"),
       desc: t("highlight_2_desc"),
       icon: UserCheck,
       stat: "25+",
-      statDesc: "Expert Advisors",
+      statDesc: isRtl ? "مستشار خبير" : "Expert Advisors",
     },
     {
       title: t("highlight_3_title"),
       desc: t("highlight_3_desc"),
       icon: Lock,
       stat: "100%",
-      statDesc: "Strict Confidentially",
+      statDesc: isRtl ? "سرية تامة" : "Strict Confidentiality",
     },
     {
       title: t("highlight_4_title"),
       desc: t("highlight_4_desc"),
       icon: Zap,
-      stat: "< 2hr",
-      statDesc: "Average Response",
+      stat: isRtl ? "ساعتين" : "< 2hr",
+      statDesc: isRtl ? "متوسط الاستجابة" : "Average Response",
     },
     {
       title: t("highlight_5_title"),
       desc: t("highlight_5_desc"),
       icon: TrendingUp,
       stat: "94%",
-      statDesc: "Success Recovery Rate",
+      statDesc: isRtl ? "نسبة نجاح التحصيل" : "Success Recovery Rate",
     },
   ];
 

@@ -32,7 +32,7 @@ export default function Hero() {
           {/* Tagline */}
           <div className="inline-flex items-center space-x-2 rtl:space-x-reverse px-4 py-1.5 rounded-full border border-gold-500/30 bg-gold-500/5 text-gold-400 text-xs sm:text-sm font-semibold uppercase tracking-widest">
             <span className="w-2 h-2 rounded-full bg-gold-500 animate-pulse" />
-            <span>Experts for Legal Consultations & Debt Collection</span>
+            <span>{isRtl ? "الخبراء للاستشارات القانونية وتحصيل الديون" : "Experts for Legal Consultations & Debt Collection"}</span>
           </div>
 
           {/* Main Headline */}

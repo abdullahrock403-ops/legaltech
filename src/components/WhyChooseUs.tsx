@@ -76,7 +76,7 @@ export default function WhyChooseUs() {
             </div>
 
             <div className="mt-12 pt-6 border-t border-slate-100 dark:border-slate-800 text-xs text-slate-400 italic">
-              Traditional models focus on litigating disputable history.
+              {isRtl ? "تركز النماذج التقليدية على مقاضاة التاريخ المتنازع عليه." : "Traditional models focus on litigating disputable history."}
             </div>
           </motion.div>
 
@@ -112,7 +112,7 @@ export default function WhyChooseUs() {
             </div>
 
             <div className="mt-12 pt-6 border-t border-gold-500/10 text-xs text-slate-400 italic">
-              We coordinate preventive consulting with high-speed digital tools.
+              {isRtl ? "نقوم بتنسيق الاستشارات الوقائية مع الأدوات الرقمية عالية السرعة." : "We coordinate preventive consulting with high-speed digital tools."}
             </div>
           </motion.div>
         </div>
@@ -123,7 +123,7 @@ export default function WhyChooseUs() {
             href="/about"
             className="inline-flex items-center space-x-2 rtl:space-x-reverse px-8 py-4 rounded-full text-sm font-bold border border-slate-200 dark:border-gold-500/20 text-navy-900 dark:text-white hover:bg-slate-100 dark:hover:bg-navy-900 transition-colors"
           >
-            <span>Learn More About Our Team & License</span>
+            <span>{isRtl ? "تعرف على المزيد حول فريقنا وترخيصنا" : "Learn More About Our Team & License"}</span>
             {isRtl ? <ArrowLeft className="w-4 h-4" /> : <ArrowRight className="w-4 h-4" />}
           </Link>
         </div>

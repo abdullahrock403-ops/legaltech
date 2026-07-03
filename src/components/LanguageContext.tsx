@@ -532,7 +532,17 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [language, setLanguage] = useState<Language>("en");
 
-  // Sync state with HTML dir attribute
+  // Load language from localStorage on client side mount
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const saved = localStorage.getItem("experts_legal_lang");
+      if (saved === "ar" || saved === "en") {
+        setLanguage(saved);
+      }
+    }
+  }, []);
+
+  // Sync state with HTML dir attribute and save to localStorage
   useEffect(() => {
     const root = document.documentElement;
     if (language === "ar") {
@@ -542,6 +552,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       root.setAttribute("dir", "ltr");
       root.setAttribute("lang", "en");
     }
+    localStorage.setItem("experts_legal_lang", language);
   }, [language]);
 
   const toggleLanguage = () => {
