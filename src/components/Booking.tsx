@@ -80,7 +80,7 @@ export default function Booking() {
               <Sparkles className="w-4.5 h-4.5" />
               <span>Premium Scheduling</span>
             </div>
-            <h2 className="text-3xl sm:text-5xl font-extrabold text-navy-900 dark:text-white">
+            <h2 className="text-3xl sm:text-5xl font-extrabold text-navy-900 dark:text-white text-center">
               {t("booking_title")}
             </h2>
             <p className="text-base sm:text-lg text-slate-500 dark:text-slate-300 leading-relaxed">

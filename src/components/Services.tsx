@@ -281,7 +281,7 @@ export default function Services({ preview = false }: ServicesProps) {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl sm:text-5xl font-extrabold text-navy-900 dark:text-white mb-4">
+            <h2 className="text-3xl sm:text-5xl font-extrabold text-navy-900 dark:text-white mb-4 text-center">
               {preview ? (isRtl ? "خدماتنا الاستشارية المتميزة" : "Featured Advisory Services") : t("services_title")}
             </h2>
             <p className="text-base sm:text-lg text-slate-500 dark:text-slate-300 leading-relaxed">

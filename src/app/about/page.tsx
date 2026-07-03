@@ -51,7 +51,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-20" style={{ backgroundImage: "url('/hero-bg.jpg')" }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
           <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight">{t("nav_about")}</h1>
+            <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-center">{t("nav_about")}</h1>
             <p className="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed font-light mt-4">
               {t("about_subtitle")}
             </p>

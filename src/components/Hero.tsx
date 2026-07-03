@@ -35,12 +35,19 @@ export default function Hero() {
             <span>{isRtl ? "الخبراء للاستشارات القانونية وتحصيل الديون" : "Experts for Legal Consultations & Debt Collection"}</span>
           </div>
 
-          {/* Main Headline */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight max-w-4xl mx-auto drop-shadow-[0_4px_16px_rgba(5,20,40,0.95)]">
-            <span className="block text-white">{t("hero_headline").split("for")[0]}</span>
-            <span className="gold-gradient-text block mt-2">
-              {t("hero_headline").substring(t("hero_headline").indexOf("for") > -1 ? t("hero_headline").indexOf("for") : 0)}
-            </span>
+            {isRtl ? (
+              <span className="gold-gradient-text block">
+                {t("hero_headline")}
+              </span>
+            ) : (
+              <>
+                <span className="block text-white">{t("hero_headline").split("for")[0]}</span>
+                <span className="gold-gradient-text block mt-2">
+                  {t("hero_headline").substring(t("hero_headline").indexOf("for") > -1 ? t("hero_headline").indexOf("for") : 0)}
+                </span>
+              </>
+            )}
           </h1>
 
           {/* Subheadline */}

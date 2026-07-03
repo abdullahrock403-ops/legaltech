@@ -138,5 +138,4 @@ html[dir="rtl"] h4,
 html[dir="rtl"] h5,
 html[dir="rtl"] h6 {
   unicode-bidi: plaintext;
-  text-align: right;
 }
