@@ -46,22 +46,22 @@ export default function Booking() {
     setLoading(true);
 
     try {
-      const formDataBody = new URLSearchParams();
-      formDataBody.append("entry.1567088639", formData.name);
-      formDataBody.append("entry.1911778662", formData.email);
-      formDataBody.append("entry.1489592650", formData.phone);
-      formDataBody.append("entry.601108676", formData.category);
-      formDataBody.append("entry.1185500210", formData.date);
-      formDataBody.append("entry.477604507", formData.time);
-      formDataBody.append("entry.19014086", formData.message);
+      const payload = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        category: formData.category,
+        date: formData.date,
+        time: formData.time,
+        message: formData.message,
+      };
 
-      await fetch("https://docs.google.com/forms/d/e/1FAIpQLSewlSe9aIug1pznIz4H9yIYX_IGADYKEoMAoj2nGSyQOzarQw/formResponse", {
+      await fetch("https://script.google.com/macros/s/AKfycbwvVp3seXyJUdtTMvf32WfL8wlmlbBW2cZwzWLspTo4VXx8VEbErAbZchIsgIodJ6Bd/exec", {
         method: "POST",
-        mode: "no-cors",
         headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
+          "Content-Type": "application/json",
         },
-        body: formDataBody.toString(),
+        body: JSON.stringify(payload),
       });
 
       setLoading(false);
@@ -76,7 +76,7 @@ export default function Booking() {
         message: "",
       });
     } catch (error) {
-      console.error("Background submission failed:", error);
+      console.error("Apps Script submission failed:", error);
       setLoading(false);
       // Show success screen as fallback to keep user flow smooth
       setIsSubmitted(true);
