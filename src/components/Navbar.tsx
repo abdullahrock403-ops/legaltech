@@ -52,16 +52,16 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Navigation Links (Visible on all devices, scrollable if space is tight) */}
-          <nav className="flex items-center overflow-x-auto no-scrollbar py-1 space-x-3 sm:space-x-6 mx-2 max-w-[40vw] sm:max-w-none">
-            <div className={`flex items-center ${isRtl ? "space-x-reverse space-x-3 sm:space-x-6" : "space-x-3 sm:space-x-6"}`}>
+          {/* Navigation Links (Visible on Desktop only) */}
+          <nav className="hidden lg:flex items-center mx-2">
+            <div className={`flex items-center ${isRtl ? "space-x-reverse space-x-6" : "space-x-6"}`}>
               {navItems.map((item) => {
                 const isActive = pathname === item.href;
                 return (
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`text-[10px] sm:text-sm font-semibold tracking-wide transition-colors relative py-1.5 whitespace-nowrap group ${
+                    className={`text-sm font-semibold tracking-wide transition-colors relative py-1.5 whitespace-nowrap group ${
                       scrolled || !isHome
                         ? isActive
                           ? "text-gold-400 font-bold"
