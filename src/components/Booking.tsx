@@ -42,31 +42,63 @@ export default function Booking() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.time) return;
+    if (!formData.time || !formData.date) return;
     setLoading(true);
 
     try {
-      const payload = {
-        fullName: formData.name,
-        email: formData.email,
-        phone: formData.phone,
-        category: formData.category,
-        preferredDate: formData.date,
-        preferredTime: formData.time,
-        message: formData.message,
+      // 1. Map Category Option to match Google Form options exactly (case-sensitive)
+      const categoryMap: Record<string, string> = {
+        legal: "Legal Consultations",
+        debt: "Debt Collection & Recovery",
+        corporate: "Corporate Business Consultancy",
+        contract: "Contract Drafting & Review",
       };
+      const categoryValue = categoryMap[formData.category] || formData.category;
 
-      const response = await fetch("/api/booking", {
+      // 2. Split Date (YYYY-MM-DD) into Year, Month, and Day
+      const [year, month, day] = formData.date.split("-");
+
+      // 3. Split Time (HH:MM AM/PM) into Hour, Minute, and AM/PM
+      const timeParts = formData.time.split(" ");
+      const [hour, minute] = timeParts[0].split(":");
+      const ampmValue = timeParts[1];
+
+      // 4. Construct URL-encoded form parameters
+      const formParams = new URLSearchParams();
+      formParams.append("entry.1567088639", formData.name);
+      formParams.append("entry.1911778662", formData.email);
+      formParams.append("entry.1489592650", formData.phone);
+      formParams.append("entry.601108676", categoryValue);
+      
+      // Google Date components
+      formParams.append("entry.1185500210_year", year);
+      formParams.append("entry.1185500210_month", month);
+      formParams.append("entry.1185500210_day", day);
+      
+      // Google Time components
+      formParams.append("entry.477604507_hour", hour);
+      formParams.append("entry.477604507_minute", minute);
+      formParams.append("entry.477604507_ampm", ampmValue.toLowerCase());
+
+      formParams.append("entry.19014086", formData.message);
+
+      const targetUrl = "https://docs.google.com/forms/d/e/1FAIpQLSewlSe9aIug1pznIz4H9yIYX_IGADYKEoMAoj2nGSyQOzarQw/formResponse";
+
+      // Log request details defensively to the browser console for debugging
+      console.log("Submitting to Google Forms:", targetUrl);
+      console.log("Request Payload Object:", Object.fromEntries(formParams.entries()));
+
+      // Dispatch fetch POST in no-cors mode
+      const res = await fetch(targetUrl, {
         method: "POST",
+        mode: "no-cors",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "application/x-www-form-urlencoded",
         },
-        body: JSON.stringify(payload),
+        body: formParams.toString(),
       });
 
-      if (!response.ok) {
-        throw new Error(`Server proxy error: ${response.status}`);
-      }
+      console.log("Form submission executed. Response status (opaque):", res.status);
 
       setLoading(false);
       setIsSubmitted(true);
@@ -80,7 +112,7 @@ export default function Booking() {
         message: "",
       });
     } catch (error) {
-      console.error("Apps Script proxy submission failed:", error);
+      console.error("Direct Google Form submission failed:", error);
       setLoading(false);
       // Show success screen as fallback to keep user flow smooth
       setIsSubmitted(true);
