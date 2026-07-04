@@ -28,7 +28,7 @@ export default function Footer() {
   return (
     <footer className="navy-gradient text-white border-t border-gold-500/20 pt-20 pb-10 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 pb-16 border-b border-slate-800">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-16 border-b border-slate-800">
           {/* Column 1: Brand & Licensing */}
           <div className="lg:col-span-2 space-y-6">
             <div className="inline-block hover:opacity-85 transition-opacity duration-300">
@@ -77,20 +77,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Legal Policy Links */}
-          <div className="space-y-6">
-            <h4 className="text-sm font-bold uppercase tracking-wider text-gold-500">
-              {isRtl ? "معلومات قانونية" : "Legal Info"}
-            </h4>
-            <ul className="space-y-4 text-sm text-slate-400">
-              <li><a href="#privacy" className="hover:text-gold-500 transition-colors">{t("footer_privacy")}</a></li>
-              <li><a href="#terms" className="hover:text-gold-500 transition-colors">{t("footer_terms")}</a></li>
-              <li><a href="#disclaimer" className="hover:text-gold-500 transition-colors">{isRtl ? "إخلاء المسؤولية التنظيمية" : "Regulatory Disclaimer"}</a></li>
-              <li><a href="#credentials" className="hover:text-gold-500 transition-colors">{isRtl ? "وثائق اعتماد الشركة" : "Company Credentials"}</a></li>
-            </ul>
-          </div>
-
-          {/* Column 4: Newsletter */}
+          {/* Column 3: Newsletter */}
           <div className="space-y-6">
             <h4 className="text-sm font-bold uppercase tracking-wider text-gold-500">
               {t("footer_newsletter")}
