@@ -57,17 +57,17 @@ export default function WhyChooseUs() {
           >
             <div>
               <div className="flex items-center space-x-3 rtl:space-x-reverse mb-8">
-                <div className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-400">
+                <div className="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300">
                   <XCircle className="w-6 h-6" />
                 </div>
-                <h3 className="text-2xl font-bold text-slate-400 uppercase tracking-wide">
+                <h3 className="text-2xl font-bold text-slate-700 dark:text-slate-200 uppercase tracking-wide">
                   {t("why_traditional_title")}
                 </h3>
               </div>
 
               <ul className="space-y-6">
                 {traditionalPoints.map((point, index) => (
-                  <li key={index} className="flex items-start space-x-3 rtl:space-x-reverse text-slate-500">
+                  <li key={index} className="flex items-start space-x-3 rtl:space-x-reverse text-slate-700 dark:text-slate-300">
                     <XCircle className="w-5 h-5 text-red-500/80 mt-0.5 flex-shrink-0" />
                     <span className="text-base font-light">{point}</span>
                   </li>
@@ -75,7 +75,7 @@ export default function WhyChooseUs() {
               </ul>
             </div>
 
-            <div className="mt-12 pt-6 border-t border-slate-100 dark:border-slate-800 text-xs text-slate-400 italic">
+            <div className="mt-12 pt-6 border-t border-slate-100 dark:border-slate-800 text-xs text-slate-600 dark:text-slate-400 italic">
               {isRtl ? "تركز النماذج التقليدية على مقاضاة التاريخ المتنازع عليه." : "Traditional models focus on litigating disputable history."}
             </div>
           </motion.div>
