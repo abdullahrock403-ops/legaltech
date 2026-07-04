@@ -364,8 +364,8 @@ export const translations: TranslationDictionary = {
     ar: "\"المنطقة الحرة لمدينة الشارقة للنشر\" (SPC Free Zone) - شارع محمد بن زايد - منطقة الزاهية",
   },
   contact_phone: {
-    en: "+971 4 123 4567",
-    ar: "+971 4 123 4567",
+    en: "+971 50 295 4666",
+    ar: "+971 50 295 4666",
   },
   contact_email: {
     en: "expertlegaldeptcollection@gmail.com",
