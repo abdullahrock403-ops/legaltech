@@ -14,6 +14,25 @@ const timeSlots = {
 // Simulated previously booked times for realism
 const bookedTimes = ["09:30 AM", "11:00 AM", "01:30 PM", "03:30 PM", "05:00 PM"];
 
+// Helper function to convert 12-hour format ("09:00 AM") to 24-hour hour and minute
+const convertTo24Hour = (timeString: string): { hour: string; minute: string } => {
+  const parts = timeString.split(" ");
+  const [hourStr, minuteStr] = parts[0].split(":");
+  const ampm = parts[1]?.toUpperCase() || "AM";
+
+  let hour = parseInt(hourStr, 10);
+  const minute = minuteStr;
+
+  if (ampm === "PM" && hour !== 12) {
+    hour += 12;
+  } else if (ampm === "AM" && hour === 12) {
+    hour = 0;
+  }
+
+  const paddedHour = hour.toString().padStart(2, "0");
+  return { hour: paddedHour, minute };
+};
+
 export default function Booking() {
   const { t, isRtl } = useLanguage();
   const [formData, setFormData] = useState({
@@ -58,10 +77,8 @@ export default function Booking() {
       // 2. Split Date (YYYY-MM-DD) into Year, Month, and Day
       const [year, month, day] = formData.date.split("-");
 
-      // 3. Split Time (HH:MM AM/PM) into Hour, Minute, and AM/PM
-      const timeParts = formData.time.split(" ");
-      const [hour, minute] = timeParts[0].split(":");
-      const ampmValue = timeParts[1];
+      // 3. Convert 12-hour Time to 24-hour format and split into Hour/Minute
+      const { hour, minute } = convertTo24Hour(formData.time);
 
       // 4. Construct URL-encoded form parameters
       const formParams = new URLSearchParams();
@@ -75,16 +92,16 @@ export default function Booking() {
       formParams.append("entry.1185500210_month", month);
       formParams.append("entry.1185500210_day", day);
       
-      // Google Time components
+      // Google Time components (24-hour format)
       formParams.append("entry.477604507_hour", hour);
       formParams.append("entry.477604507_minute", minute);
-      formParams.append("entry.477604507_ampm", ampmValue.toLowerCase());
 
       formParams.append("entry.19014086", formData.message);
 
       const targetUrl = "https://docs.google.com/forms/d/e/1FAIpQLSewlSe9aIug1pznIz4H9yIYX_IGADYKEoMAoj2nGSyQOzarQw/formResponse";
 
       // Log request details defensively to the browser console for debugging
+      console.log(`Converted time "${formData.time}" to 24-hour: hour="${hour}", minute="${minute}"`);
       console.log("Submitting to Google Forms:", targetUrl);
       console.log("Request Payload Object:", Object.fromEntries(formParams.entries()));
 
