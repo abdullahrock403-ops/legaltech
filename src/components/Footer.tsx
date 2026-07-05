@@ -108,19 +108,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} {isRtl ? "Expert Legal Consultations & Debt Collection. جميع الحقوق محفوظة." : "Expert Legal Consultations & Debt Collection. All Rights Reserved."}
           </p>
 
-          <div className="flex flex-wrap justify-center items-center gap-x-3 gap-y-2 text-xs text-slate-500">
-            <a href="#privacy" className="hover:text-gold-500 transition-colors">{t("footer_privacy")}</a>
-            <span className="text-slate-700">|</span>
-            <a href="#terms" className="hover:text-gold-500 transition-colors">{t("footer_terms")}</a>
-            <span className="text-slate-700">|</span>
-            <a href="#disclaimer" className="hover:text-gold-500 transition-colors">
-              {isRtl ? "إخلاء المسؤولية التنظيمية" : "Regulatory Disclaimer"}
-            </a>
-            <span className="text-slate-700">|</span>
-            <a href="#credentials" className="hover:text-gold-500 transition-colors">
-              {isRtl ? "وثائق اعتماد الشركة" : "Company Credentials"}
-            </a>
-          </div>
+
 
           <button
             onClick={scrollToTop}
