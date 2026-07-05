@@ -54,7 +54,7 @@ export default function Navbar() {
 
           {/* Navigation Links (Visible on Desktop only) */}
           <nav className="hidden lg:flex items-center mx-2">
-            <div className={`flex items-center ${isRtl ? "space-x-reverse space-x-6" : "space-x-6"}`}>
+            <div className="flex items-center gap-6">
               {navItems.map((item) => {
                 const isActive = pathname === item.href;
                 return (
@@ -80,10 +80,10 @@ export default function Navbar() {
           </nav>
 
           {/* Action buttons (Language switcher & CTA - Visible on all devices) */}
-          <div className="flex items-center space-x-1.5 sm:space-x-3 rtl:space-x-reverse">
+          <div className="flex items-center gap-1.5 sm:gap-3">
             <button
               onClick={toggleLanguage}
-              className={`flex items-center space-x-1 rtl:space-x-reverse text-[10px] sm:text-sm font-semibold px-2 py-1 sm:px-3 sm:py-2 rounded-full border transition-all duration-300 ${
+              className={`flex items-center gap-1 text-[10px] sm:text-sm font-semibold px-2 py-1 sm:px-3 sm:py-2 rounded-full border transition-all duration-300 ${
                 scrolled || !isHome
                   ? "text-slate-200 border-slate-700 hover:border-gold-500 hover:text-gold-400"
                   : "text-white border-white/20 hover:border-gold-500 hover:text-gold-400"
@@ -95,7 +95,7 @@ export default function Navbar() {
 
             <Link
               href="/booking"
-              className="flex items-center space-x-1.5 rtl:space-x-reverse px-2.5 py-1.5 sm:px-4 sm:py-2 rounded-full text-[10px] sm:text-xs md:text-sm font-bold tracking-wide uppercase transition-all duration-300 transform hover:-translate-y-0.5 gold-gradient-bg text-navy-900 hover:shadow-lg hover:shadow-gold-500/20 whitespace-nowrap"
+              className="flex items-center gap-1.5 px-2.5 py-1.5 sm:px-4 sm:py-2 rounded-full text-[10px] sm:text-xs md:text-sm font-bold tracking-wide uppercase transition-all duration-300 transform hover:-translate-y-0.5 gold-gradient-bg text-navy-900 hover:shadow-lg hover:shadow-gold-500/20 whitespace-nowrap"
             >
               <PhoneCall className="w-3 h-3 sm:w-4 sm:h-4" />
               <span>{t("nav_book_btn")}</span>

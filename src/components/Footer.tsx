@@ -124,7 +124,7 @@ export default function Footer() {
 
           <button
             onClick={scrollToTop}
-            className="flex items-center space-x-2 rtl:space-x-reverse px-4 py-2 rounded-full border border-slate-800 hover:border-gold-500 text-xs text-slate-400 hover:text-white transition-colors"
+            className="flex items-center gap-2 px-4 py-2 rounded-full border border-slate-800 hover:border-gold-500 text-xs text-slate-400 hover:text-white transition-colors"
           >
             <span>{isRtl ? "العودة إلى الأعلى" : "Back to Top"}</span>
             <ArrowUp className="w-4.5 h-4.5" />
