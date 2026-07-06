@@ -47,13 +47,6 @@ export default function Home() {
               <CalendarDays className="w-5 h-5" />
               <span>{t("hero_cta_book")}</span>
             </Link>
-            <Link
-              href="/booking"
-              className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 rtl:space-x-reverse px-8 py-4 rounded-full text-base font-bold tracking-wide uppercase border border-white/20 hover:border-gold-500 bg-white/5 hover:bg-white/10 text-white transition-all duration-300 transform hover:-translate-y-1"
-            >
-              <span>{t("nav_book_btn")}</span>
-              {isRtl ? <ArrowLeft className="w-4 h-4" /> : <ArrowRight className="w-4 h-4" />}
-            </Link>
           </div>
           <p className="text-xs text-slate-400 italic font-light pt-2">
             * {t("hero_fee_note")}
