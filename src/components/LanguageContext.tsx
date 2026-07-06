@@ -518,6 +518,22 @@ export const translations: TranslationDictionary = {
     en: "Integrating active CRM case tracking, digital contract portals, golden visa support, and secure online consultation bookings.",
     ar: "دمج أنظمة المتابعة الرقمية (CRM) وبوابات إدارة الاتفاقيات، وتسهيل الإقامات الذهبية وحجوزات الاستشارات الذكية.",
   },
+  about_leader_section_title: {
+    en: "Leadership & Partners",
+    ar: "القيادة والشركاء",
+  },
+  about_leader_name: {
+    en: "Mr. Salah Ali Salem Alazzani",
+    ar: "أ. صلاح علي سالم العزاني",
+  },
+  about_leader_title: {
+    en: "Founder & Managing Partner",
+    ar: "المؤسس والشريك المدير",
+  },
+  about_leader_desc: {
+    en: "Directing corporate litigation strategies, commercial debt recoveries, and business advisory services across the United Arab Emirates.",
+    ar: "يتولى توجيه استراتيجيات التقاضي للشركات، وتسوية وتحصيل الديون التجارية، وتقديم الخدمات الاستشارية للأعمال في جميع أنحاء دولة الإمارات العربية المتحدة.",
+  },
 };
 
 interface LanguageContextType {

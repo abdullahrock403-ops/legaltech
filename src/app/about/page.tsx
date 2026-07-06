@@ -235,7 +235,7 @@ export default function AboutPage() {
         {/* Leadership */}
         <section className="space-y-12">
           <div className="text-center">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-900">Leadership & Partners</h2>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-900">{t("about_leader_section_title")}</h2>
           </div>
           <div className="max-w-2xl mx-auto">
             {/* Single Leader Card */}
@@ -244,9 +244,9 @@ export default function AboutPage() {
                 S.A
               </div>
               <div>
-                <h4 className="text-lg font-extrabold text-navy-900">Mr. Salah Ali Salem Alazzani</h4>
-                <p className="text-xs text-gold-600 font-bold uppercase tracking-wider mt-0.5">Founder & Managing Partner</p>
-                <p className="text-sm text-slate-700 mt-2 leading-[1.8] font-normal">Directing corporate litigation strategies, commercial debt recoveries, and business advisory services across the United Arab Emirates.</p>
+                <h4 className="text-lg font-extrabold text-navy-900">{t("about_leader_name")}</h4>
+                <p className="text-xs text-gold-600 font-bold uppercase tracking-wider mt-0.5">{t("about_leader_title")}</p>
+                <p className="text-sm text-slate-700 mt-2 leading-[1.8] font-normal">{t("about_leader_desc")}</p>
               </div>
             </motion.div>
           </div>
