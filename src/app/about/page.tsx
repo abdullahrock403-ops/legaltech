@@ -239,7 +239,7 @@ export default function AboutPage() {
           </div>
           <div className="max-w-2xl mx-auto">
             {/* Single Leader Card */}
-            <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm flex items-center space-x-6 rtl:space-x-reverse">
+            <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm flex items-center gap-6">
               <div className="w-16 h-16 rounded-full bg-navy-900 text-gold-500 flex items-center justify-center font-bold text-xl flex-shrink-0">
                 S.A
               </div>
