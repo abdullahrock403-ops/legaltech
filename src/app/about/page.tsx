@@ -64,14 +64,14 @@ export default function AboutPage() {
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div initial={{ opacity: 0, x: -35 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="space-y-6 lg:order-first order-last max-w-3xl">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-900">{t("about_overview_title")}</h2>
-            <p className="text-base sm:text-lg text-slate-700 dark:text-slate-200 leading-[1.8] font-light">
+            <p className="text-base sm:text-lg text-slate-700 leading-[1.8] font-normal">
               {t("about_overview_text")}
             </p>
-            <div className="p-6 bg-navy-900/5 dark:bg-gold-500/5 rounded-2xl border border-navy-900/5 dark:border-gold-500/10">
-              <h4 className="text-lg sm:text-xl font-bold text-navy-900 dark:text-gold-500 mb-3">
+            <div className="p-6 bg-navy-900/5 rounded-2xl border border-navy-900/10">
+              <h4 className="text-lg sm:text-xl font-bold text-navy-900 mb-3">
                 {isRtl ? "فلسفة عملنا" : "Our Business Philosophy"}
               </h4>
-              <p className="text-base text-slate-700 dark:text-slate-200 leading-[1.8] font-light">
+              <p className="text-base text-slate-700 leading-[1.8] font-normal">
                 {isRtl
                   ? "نحن نؤمن بأن الحماية القانونية لا ينبغي أن تعوق سرعة رواد الأعمال. من خلال تنسيق استشارات تأسيس الشركات، الامتثال للتسويق، الخدمات اللوجستية، تأشيرة الإقامة الذهبية، والاستعداد الضريبي تحت مظلة رقمية واحدة، فإننا نساعد الشركات على الأداء والنمو بثقة وأمان تام."
                   : "We believe legal safeguards should never block entrepreneurial speed. By coordinating corporate brokerage, marketing compliance, logistics, Golden Visa immigration, and tax readiness under one digital roof, we enable businesses to execute with speed and complete peace of mind."}
@@ -153,7 +153,7 @@ export default function AboutPage() {
               <Target className="w-6 h-6" />
             </div>
             <h3 className="text-2xl font-extrabold text-navy-900">{t("about_mission_title")}</h3>
-            <p className="text-sm sm:text-base text-slate-500 leading-relaxed font-light">
+            <p className="text-base text-slate-700 leading-[1.8] font-normal">
               {t("about_mission_desc")}
             </p>
           </motion.div>
@@ -164,7 +164,7 @@ export default function AboutPage() {
               <Compass className="w-6 h-6" />
             </div>
             <h3 className="text-2xl font-extrabold text-navy-900">{t("about_vision_title")}</h3>
-            <p className="text-sm sm:text-base text-slate-500 leading-relaxed font-light">
+            <p className="text-base text-slate-700 leading-[1.8] font-normal">
               {t("about_vision_desc")}
             </p>
           </motion.div>
@@ -184,7 +184,7 @@ export default function AboutPage() {
                     <Icon className="w-5 h-5" />
                   </div>
                   <h4 className="text-lg font-bold text-navy-900">{v.title}</h4>
-                  <p className="text-xs sm:text-sm text-slate-400 leading-relaxed font-light">{v.desc}</p>
+                  <p className="text-sm sm:text-base text-slate-700 leading-[1.8] font-normal">{v.desc}</p>
                 </motion.div>
               );
             })}
@@ -225,7 +225,7 @@ export default function AboutPage() {
                     0{i + 1}
                   </div>
                   <h4 className="text-lg font-bold text-navy-900 mb-2">{step.year}</h4>
-                  <p className="text-xs sm:text-sm text-slate-400 leading-relaxed font-light">{step.desc}</p>
+                  <p className="text-sm sm:text-base text-slate-700 leading-[1.8] font-normal">{step.desc}</p>
                 </motion.div>
               ))}
             </div>
@@ -246,7 +246,7 @@ export default function AboutPage() {
               <div>
                 <h4 className="text-lg font-extrabold text-navy-900">Mr. Salah Ali Salem Alazzani</h4>
                 <p className="text-xs text-gold-600 font-bold uppercase tracking-wider mt-0.5">Founder & Managing Partner</p>
-                <p className="text-xs text-slate-400 mt-2 font-light">Directing corporate litigation strategies, commercial debt recoveries, and business advisory services across the United Arab Emirates.</p>
+                <p className="text-sm text-slate-700 mt-2 leading-[1.8] font-normal">Directing corporate litigation strategies, commercial debt recoveries, and business advisory services across the United Arab Emirates.</p>
               </div>
             </motion.div>
           </div>
