@@ -487,8 +487,8 @@ export const translations: TranslationDictionary = {
     ar: "الترخيص الرسمي وتفويضات دولة الإمارات",
   },
   about_license_desc: {
-    en: "Experts for Legal Consultations & Debt Collection operates as a fully registered and licensed entity in compliance with the Department of Economy and Tourism (DET) and federal regulatory bodies of the United Arab Emirates.",
-    ar: "تعمل شركة الخبراء للاستشارات القانونية وتحصيل الديون ككيان مسجل ومرخص بالكامل بما يتوافق مع دائرة الاقتصاد والسياحة (DET) والجهات التنظيمية الاتحادية في دولة الإمارات العربية المتحدة.",
+    en: "Experts for Legal Consultations & Debt Collection operates as a fully registered and licensed entity in compliance with Sharjah Publishing City Free Zone Authority (SPC Free Zone) and federal regulatory bodies of the United Arab Emirates.",
+    ar: "تعمل شركة الخبراء للاستشارات القانونية وتحصيل الديون ككيان مسجل ومرخص بالكامل بما يتوافق مع هيئة المنطقة الحرة لمدينة الشارقة للنشر (SPC Free Zone) والجهات التنظيمية الاتحادية في دولة الإمارات العربية المتحدة.",
   },
   about_timeline_title: {
     en: "Our Corporate Journey",
