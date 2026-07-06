@@ -36,89 +36,89 @@ export const servicesData: ServiceItem[] = [
     title: { en: "Legal Consultations", ar: "الاستشارات القانونية" },
     desc: {
       en: "Strategic legal advice covering UAE corporate, labor, and civil laws.",
-      ar: "استشارات قانونية استراتيجية تغطي قوانين الشركات والعمل والمدني في الإمارات.",
+      ar: "استشارات قانونية استراتيجية متكاملة لتغطية قوانين الشركات والعمل والمعاملات المدنية بدولة الإمارات.",
     },
     details: {
       en: "Our legal consulting team provides expert guidance for corporate restructurings, labor disputes, civil litigation preparation, and general corporate compliance under the latest UAE regulations. We ensure your business operates within safe margins.",
-      ar: "يقدم فريق الاستشارات القانونية لدينا توجيهات الخبراء لإعادة هيكلة الشركات، ونزاعات العمل، وإعداد التقاضي المدني، والامتثال العام للشركات بموجب أحدث اللوائح المعمول بها في دولة الإمارات. نضمن أن تعمل عمليتك بأمان تام.",
+      ar: "يقدم قسم الاستشارات القانونية لدينا توجيهات الخبراء لإعادة هيكلة وتأسيس الشركات، وحل النزاعات العمالية، والتحضير للتقاضي المدني، وضمان الامتثال التام مع أحدث اللوائح والأنظمة في دولة الإمارات العربية المتحدة.",
     },
     benefits: {
       en: ["Direct access to licensed UAE advisors", "Proactive mitigation of corporate liability", "Comprehensive analysis of local legal standing"],
-      ar: ["الوصول المباشر إلى مستشاري الإمارات المرخصين", "الحد الاستباقي من المسؤولية القانونية للشركات", "تحليل شامل للموقف القانوني المحلي"],
+      ar: ["قنوات تواصل مباشرة مع مستشارين مرخصين بالدولة", "الحد الاستباقي من المسؤولية القانونية للمؤسسات", "دراسة تحليلية شاملة للموقف القانوني لشركتكم"],
     },
     faqs: [
       {
         q: { en: "How are consultation fees calculated?", ar: "كيف يتم احتساب الرسوم الاستشارية؟" },
-        a: { en: "Fees are charged per session based on case complexity and the depth of documentation review required.", ar: "يتم احتساب الرسوم لكل جلسة بناءً على مدى تعقيد القضية وعمق مراجعة المستندات المطلوبة." }
+        a: { en: "Fees are charged per session based on case complexity and the depth of documentation review required.", ar: "يتم احتساب الرسوم لكل جلسة بناءً على مدى تعقيد المسألة وعمق دراسة المستندات المطلوبة." }
       }
     ]
   },
   {
     id: "debt-collection",
     icon: Layers,
-    title: { en: "Debt Collection & Recovery", ar: "تحصيل واسترداد الديون" },
+    title: { en: "Debt Collection & Recovery", ar: "تحصيل الديون واستردادها" },
     desc: {
       en: "Professional, ethical, and highly efficient corporate debt recovery.",
-      ar: "استرداد ديون الشركات بشكل مهني وأخلاقي وفعال للغاية.",
+      ar: "استرداد مستحقات وديون الشركات بشكل مهني وفعال وفق أعلى المعايير القانونية والأخلاقية.",
     },
     details: {
       en: "We utilize advanced negotiation techniques and dynamic legal pressure points to recover outstanding receivables without breaking valuable corporate relationships. Licensed and highly successful across UAE territories.",
-      ar: "نحن نستخدم تقنيات التفاوض المتقدمة ونقاط الضغط القانوني الفعالة لاسترداد المستحقات المتأخرة دون الإضرار بالعلاقات التجارية القيمة. خدمات مرخصة وناجحة للغاية في الإمارات.",
+      ar: "نعتمد على تقنيات التفاوض المتقدمة والوسائل القانونية المنظمة لضمان استرداد ديونكم ومستحقاتكم المالية المتأخرة مع الحفاظ على استمرارية علاقاتكم التجارية. خدماتنا مرخصة بالكامل وذات نسب نجاح قياسية.",
     },
     benefits: {
       en: ["No-recovery, no-advocate-fee options", "Full legal escalation pathways", "Transparent online collection updates"],
-      ar: ["خيارات التحصيل بدون رسوم مسبقة", "مسارات تصعيد قانونية متكاملة", "تحديثات تحصيل رقمية وشفافة"],
+      ar: ["خيارات تحصيل مرنة دون أتعاب مسبقة", "إجراءات وتصعيد قانوني متكامل ومنظم", "تقارير وتحديثات رقمية شفافة لمتابعة حالة التحصيل"],
     },
     faqs: [
       {
         q: { en: "What is the average time for debt recovery?", ar: "ما هو متوسط الوقت المستغرق لاسترداد الديون؟" },
-        a: { en: "Corporate recoveries typically take between 30 to 90 days depending on debtor liquidity and standing.", ar: "عادةً ما تستغرق عمليات الاسترداد للشركات ما بين 30 إلى 90 يومًا بناءً على سيولة المدين وموقفه المالي." }
+        a: { en: "Corporate recoveries typically take between 30 to 90 days depending on debtor liquidity and standing.", ar: "تتراوح مدة التسويات المالية للشركات عادةً بين 30 إلى 90 يوماً بناءً على الملاءة المالية للمدين واستجابته." }
       }
     ]
   },
   {
     id: "business-consultancy",
     icon: Briefcase,
-    title: { en: "Business Consultancy", ar: "استشارات الأعمال" },
+    title: { en: "Business Consultancy", ar: "الاستشارات التجارية وتأسيس الشركات" },
     desc: {
       en: "Operational audit, commercial optimization, and expansion planning.",
-      ar: "التدقيق التشغيلي، تحسين الكفاءة التجارية، والتخطيط للتوسع.",
+      ar: "التدقيق التشغيلي، وتحسين الكفاءة التجارية، ورسم استراتيجيات التوسع المؤسسي.",
     },
     details: {
       en: "From market entry analysis to process optimizations and financial roadmaps, we support businesses looking to scale in Dubai and globally. Our multi-disciplinary experts align legal safety with commercial agility.",
-      ar: "من تحليل دخول السوق إلى تحسين العمليات ورسم خرائط الطريق المالية، ندعم الشركات التي تتطلع إلى التوسع في دبي والعالم. يجمع خبراؤنا بين السلامة القانونية والمرونة التجارية.",
+      ar: "من دراسة دخول السوق المحلي إلى تحسين كفاءة العمليات التشغيلية وتطوير الخطط المالية، نساعد الشركات على النمو والازدهار في سوق دبي والإمارات. ندمج بين أمان المعاملات القانونية والمرونة التشغيلية للأعمال.",
     },
     benefits: {
       en: ["Strategic market entry reports", "Process efficiency audits", "Corporate growth mapping"],
-      ar: ["تقارير استراتيجية لدخول السوق", "تدقيق كفاءة العمليات التشغيلية", "رسم خرائط نمو الشركات"],
+      ar: ["تقارير ودراسات استباقية لدخول السوق وتحديد الفرص", "تدقيق شامل لكفاءة العمليات التشغيلية للمنشأة", "رسم خرائط نمو الشركات والأعمال"],
     },
     faqs: [
       {
-        q: { en: "Do you assist with international scale-up?", ar: "هل تقدمون الدعم للتوسع الدولي؟" },
-        a: { en: "Yes, we construct joint-venture agreements and regulatory structures to facilitate cross-border setups.", ar: "نعم، نحن نصمم اتفاقيات المشاريع المشتركة والهياكل التنظيمية لتسهيل التأسيس عابر الحدود." }
+        q: { en: "Do you assist with international scale-up?", ar: "هل تقدمون الدعم لخطط التوسع الدولي؟" },
+        a: { en: "Yes, we construct joint-venture agreements and regulatory structures to facilitate cross-border setups.", ar: "نعم، نقوم بصياغة وتطوير اتفاقيات المشاريع المشتركة والهياكل التشغيلية والتنظيمية لتسهيل عمليات التأسيس عابر الحدود." }
       }
     ]
   },
   {
     id: "contract-review",
     icon: FileText,
-    title: { en: "Contract Drafting & Review", ar: "صياغة ومراجعة العقود" },
+    title: { en: "Contract Drafting & Review", ar: "صياغة ومراجعة العقود والاتفاقيات" },
     desc: {
       en: "Drafting solid agreements designed to mitigate corporate exposure.",
-      ar: "صياغة اتفاقيات متينة ومحكمة ومصممة لتقليل المخاطر القانونية للشركات.",
+      ar: "صياغة اتفاقيات متينة ومحكمة ومصممة لتقليل المخاطر وتفادي الثغرات القانونية.",
     },
     details: {
       en: "We design robust non-disclosure agreements (NDAs), joint venture structures, employment contracts, partnership contracts, and vendor agreements, ensuring you are fully protected in every transaction.",
-      ar: "نصمم اتفاقيات عدم إفشاء قوية (NDAs)، وهياكل المشاريع المشتركة، وعقود العمل، وعقود الشراكة، واتفاقيات الموردين، مما يضمن حمايتك بالكامل في كل صفقة تجارية.",
+      ar: "نقوم بإعداد وصياغة عقود عدم الإفشاء (NDAs)، وعقود المشاريع المشتركة، واتفاقيات الشركاء والموردين، وعقود العمل والتوظيف، لضمان أعلى مستويات الحماية والموثوقية لشركتكم في كافة معاملاتاتها التجارية.",
     },
     benefits: {
       en: ["Protection of intellectual property", "Elimination of loophole exposures", "Fast draft turnaround times"],
-      ar: ["حماية الملكية الفكرية والأسرار التجارية", "القضاء على الثغرات القانونية المحتملة", "سرعة إعداد ومراجعة المسودات"],
+      ar: ["حماية كاملة للملكية الفكرية والأسرار التجارية", "سد كافة الثغرات وتفادي مواطن الخلل في الصياغة", "سرعة وكفاءة عالية في إعداد ومراجعة مسودات العقود"],
     },
     faqs: [
       {
         q: { en: "What contracts do you review?", ar: "ما هي العقود التي تقومون بمراجعتها؟" },
-        a: { en: "We review commercial sales, employment agreements, lease contracts, and shareholder agreements.", ar: "نراجع عقود المبيعات التجارية، اتفاقيات العمل، عقود الإيجار، واتفاقيات المساهمين." }
+        a: { en: "We review commercial sales, employment agreements, lease contracts, and shareholder agreements.", ar: "نراجع عقود التأسيس والمبيعات التجارية، اتفاقيات العمل، عقود الإيجار والاستثمار، واتفاقيات المساهمين والشركاء." }
       }
     ]
   },
@@ -128,20 +128,20 @@ export const servicesData: ServiceItem[] = [
     title: { en: "Commercial Brokerage", ar: "الوساطة التجارية" },
     desc: {
       en: "Connecting strategic corporate investors with vetted business assets.",
-      ar: "ربط مستثمري الشركات الاستراتيجيين بالأصول والفرص التجارية الموثوقة.",
+      ar: "ربط مستثمري الشركات بالأصول والفرص الاستثمارية الخاضعة للتدقيق.",
     },
     details: {
       en: "We facilitate commercial matchmaking, joint ventures, and asset transactions. Our team provides the structural due diligence necessary to close secure and highly profitable corporate deals in Dubai.",
-      ar: "نحن نسهل التوفيق التجاري، والمشاريع المشتركة، ومعاملات الأصول. يوفر فريقنا العناية الواجبة الهيكلية اللازمة لإغلاق صفقات الشركات الآمنة والمربحة للغاية في دبي.",
+      ar: "نعمل على التوفيق التجاري وتسهيل عمليات الشراكةصفقات الأصول التجارية. يقدم فريقنا خدمات العناية الواجبة والتدقيق لضمان إبرام صفقات مؤسسية آمنة وعالية الربحية في إمارة دبي وبقية مناطق الدولة.",
     },
     benefits: {
       en: ["Vetted commercial investments pipeline", "Safe transaction escrow coordination", "Comprehensive company audit access"],
-      ar: ["قنوات استثمار تجاري خاضعة للتدقيق", "تنسيق آمن لحسابات الضمان والمعاملات", "الوصول لتقارير تدقيق الشركات الشاملة"],
+      ar: ["قنوات استثمارية وأصول تجارية خاضعة للتدقيق الشامل", "تنسيق آمن للمعاملات وحسابات الضمان المالي", "الوصول لتقارير العناية الواجبة والتقييم للشركات"],
     },
     faqs: [
       {
         q: { en: "What sectors do you broker?", ar: "ما هي القطاعات التي تقومون بالوساطة فيها؟" },
-        a: { en: "We specialize in logistics assets, industrial sectors, and digital tech firms.", ar: "نحن نتخصص في أصول الخدمات اللوجستية، والقطاعات الصناعية، وشركات التكنولوجيا الرقمية." }
+        a: { en: "We specialize in logistics assets, industrial sectors, and digital tech firms.", ar: "نتخصص بشكل رئيسي في أصول الخدمات اللوجستية، القطاعات الصناعية، وشركات التكنولوجيا والخدمات الرقمية." }
       }
     ]
   },
@@ -151,20 +151,20 @@ export const servicesData: ServiceItem[] = [
     title: { en: "Business Setup Services", ar: "خدمات تأسيس الشركات" },
     desc: {
       en: "End-to-end mainland, freezone, and offshore company formation.",
-      ar: "تأسيس كامل للشركات في البر الرئيسي والمناطق الحرة وخارج الحدود.",
+      ar: "حلول متكاملة لتأسيس الشركات في البر الرئيسي والمناطق الحرة وخارج الحدود بالدولة.",
     },
     details: {
       en: "We handle corporate structuring, trade license procurement, local sponsor arrangements, and corporate bank account introduction. We make starting a business in the UAE seamless and transparent.",
-      ar: "نتعامل مع الهيكلة المؤسسية، والحصول على التراخيص التجارية، وترتيبات الكفيل المحلي، والتقديم لدى البنوك التجارية. نجعل بدء الأعمال في الإمارات أمراً سهلاً وشفافاً.",
+      ar: "نتولى كافة إجراءات الهيكلة المؤسسية، وإصدار التراخيص التجارية، وصياغة عقود التأسيس وتعيين وكيل الخدمات أو الشريك المحلي، بالإضافة إلى تسهيل فتح الحسابات البنكية لجعل تأسيس الأعمال سلساً وشفافاً.",
     },
     benefits: {
       en: ["Complete DET and freezone coordination", "Secure banking introductory paths", "Golden Visa integration support"],
-      ar: ["تنسيق متكامل مع دائرة الاقتصاد والمناطق الحرة", "مسارات تقديم بنكية آمنة وموثوقة", "دعم متكامل للإقامة الذهبية للمؤسسين"],
+      ar: ["تنسيق مباشر وسريع مع المناطق الحرة ودائرة الاقتصاد", "تسهيل فتح الحسابات المصرفية لدى البنوك المحلية", "دعم ودمج إجراءات الإقامة الذهبية للمستثمرين والمؤسسين"],
     },
     faqs: [
       {
         q: { en: "Which freezone is best for my company?", ar: "أي منطقة حرة هي الأنسب لشركتي؟" },
-        a: { en: "We evaluate your business activity, target market, and budget to recommend the optimal freezone structure.", ar: "نقوم بتقييم نشاط عملك، والسوق المستهدف، والميزانية للتوصية بهيكل المنطقة الحرة الأمثل." }
+        a: { en: "We evaluate your business activity, target market, and budget to recommend the optimal freezone structure.", ar: "نقوم بدراسة نشاط الشركة المستهدف والميزانية المقترحة لتحديد واختيار هيكل المنطقة الحرة الأنسب والأكثر كفاءة." }
       }
     ]
   },
@@ -174,20 +174,20 @@ export const servicesData: ServiceItem[] = [
     title: { en: "Marketing & PR Consultancy", ar: "استشارات التسويق والعلاقات العامة" },
     desc: {
       en: "Brand positioning and legal-compliant public relations counseling.",
-      ar: "تموضع العلامة التجارية واستشارات العلاقات العامة المتوافقة مع القانون.",
+      ar: "تموضع العلامة التجارية وتطوير استراتيجيات الاتصال المتوافقة مع اللوائح والأنظمة.",
     },
     details: {
       en: "Align your communications with UAE's advertising guidelines. We provide branding advice, market campaigns setup, and crisis communication management to preserve your enterprise reputation.",
-      ar: "قم بمواءمة اتصالاتك التسويقية مع إرشادات الإعلانات في الإمارات. نقدم مشورة الهوية، وحملات السوق، وإدارة الأزمات للحفاظ على سمعة مؤسستك.",
+      ar: "نعمل على مواءمة اتصالاتكم وحملاتكم التسويقية مع الضوابط والإرشادات الإعلانية السارية بالدولة، وتوفير استشارات الهوية وحملات العلاقات العامة وإدارة سمعة المنشأة للوقاية من أية غرامات تنظيمية.",
     },
     benefits: {
       en: ["Legal-compliant communications strategies", "Corporate branding audits", "Crisis PR management structures"],
-      ar: ["استراتيجيات اتصال متوافقة مع القوانين المحلية", "تدقيق وتقييم الهوية المؤسسية للعلامات التجارية", "هياكل متكاملة لإدارة الأزمات الإعلامية"],
+      ar: ["استراتيجيات اتصال متوافقة تماماً مع القوانين الإعلانية", "تقييم وتدقيق شامل لسمعة وهوية العلامة التجارية", "أطر وإجراءات متكاملة لإدارة الأزمات الإعلامية"],
     },
     faqs: [
       {
         q: { en: "Why is legal compliance important in PR?", ar: "لماذا يعد الامتثال القانوني مهمًا في العلاقات العامة؟" },
-        a: { en: "The UAE has strict media and advertising guidelines; we ensure your promotions never incur regulatory fines.", ar: "تطبق دولة الإمارات إرشادات إعلامية وإعلانية صارمة؛ نضمن ألا تسبب حملاتك أي غرامات تنظيمية." }
+        a: { en: "The UAE has strict media and advertising guidelines; we ensure your promotions never incur regulatory fines.", ar: "تطبق دولة الإمارات ضوابط صارمة على المحتوى الإعلامي والإعلاني؛ ونحن نضمن ألا تسبب حملاتكم أية مخالفات أو غرامات." }
       }
     ]
   },
@@ -197,66 +197,66 @@ export const servicesData: ServiceItem[] = [
     title: { en: "Logistics Consultancy", ar: "استشارات الخدمات اللوجستية" },
     desc: {
       en: "Supply chain mapping and customs regulations advisory.",
-      ar: "تخطيط سلاسل الإمداد والاستشارات الخاصة باللوائح الجمركية.",
+      ar: "تخطيط سلاسل الإمداد والاستشارات الخاصة باللوائح والجمارك للواردات والصادرات.",
     },
     details: {
       en: "Optimizing supply chain channels across GCC borders. We evaluate logistics contracts, verify shipping liability frameworks, and guide you through UAE import/export custom compliance guidelines.",
-      ar: "تحسين قنوات سلاسل الإمداد عبر حدود دول مجلس التعاون الخليجي. نقيم عقود اللوجستيات، ونتحقق من أطر المسؤولية، ونرشدك عبر شروط الجمارك للاستيراد والتصدير.",
+      ar: "تحسين قنوات التوزيع وسلاسل الإمداد عبر حدود دول مجلس التعاون الخليجي، وتدقيق عقود الشحن والخدمات اللوجستية وتحديد أطر المسؤولية والتخليص الجمركي وفق الأنظمة المعمول بها.",
     },
     benefits: {
       en: ["GCC customs clearance guidance", "Shipping liability risk assessment", "Supply chain bottleneck audits"],
-      ar: ["التوجيه الخاص بالتخليص الجمركي في دول الخليج", "تقييم مخاطر المسؤولية عن الشحن والترانزيت", "تدقيق وتحليل اختناقات سلاسل الإمداد"],
+      ar: ["إرشادات وحلول التخليص الجمركي في دول الخليج", "تقييم مخاطر المسؤولية والتأمين على الشحن والتخزين", "تحليل وحل اختناقات قنوات سلاسل التوريد والإمداد"],
     },
     faqs: [
       {
         q: { en: "Do you broker logistics leases?", ar: "هل تقومون بالوساطة في عقود الإيجار اللوجستية؟" },
-        a: { en: "Yes, we coordinate warehouse leases and storage contracts via our commercial brokerage arm.", ar: "نعم، ننسق عقود إيجار المستودعات والتخزين من خلال قسم الوساطة التجارية لدينا." }
+        a: { en: "Yes, we coordinate warehouse leases and storage contracts via our commercial brokerage arm.", ar: "نعم، نقوم بتنسيق عقود إيجار المستودعات ومرافق التخزين من خلال ذراع الوساطة التجارية التابع للمنشأة." }
       }
     ]
   },
   {
     id: "immigration",
     icon: FileCheck,
-    title: { en: "Immigration Consultancy", ar: "استشارات الهجرة والإقامة" },
+    title: { en: "Immigration Consultancy", ar: "خدمات تأشيرات الإقامة والهجرة" },
     desc: {
       en: "Golden Visa, corporate work permits, and investor residency support.",
-      ar: "الإقامة الذهبية، تصاريح العمل للشركات، ودعم إقامة المستثمرين.",
+      ar: "الإقامة الذهبية، تصاريح العمل للمؤسسات، ودعم إقامة المستثمرين والشركاء.",
     },
     details: {
       en: "Comprehensive immigration planning for investors, executives, and high-net-worth individuals. We guide you through corporate work permit allocations and Golden Visa compliance standards.",
-      ar: "تخطيط شامل للهجرة للمستثمرين والمديرين التنفيذيين والأفراد ذوي الملاءة المالية العالية. نسهل الحصول على تصاريح العمل وتلبية معايير الإقامة الذهبية.",
+      ar: "تخطيط شامل لإجراءات الإقامة وتأشيرات المستثمرين والمديرين التنفيذيين والأفراد ذوي الملاءة المالية العالية بالدولة، وتسهيل إصدار تصاريح العمل وتلبية معايير الإقامة الذهبية.",
     },
     benefits: {
       en: ["Golden Visa eligibility assessment", "Corporate executive work visas processing", "Dependent visa coordination support"],
-      ar: ["تقييم الأهلية للحصول على الإقامة الذهبية", "معاملات تأشيرات العمل للمديرين التنفيذيين", "دعم معاملات تأشيرات أفراد الأسرة والمكفولين"],
+      ar: ["تقييم الأهلية للحصول على فئات الإقامة الذهبية", "سرعة إنجاز تأشيرات العمل للكوادر الإدارية والتنفيذية", "دعم متكامل لإصدار تأشيرات أفراد الأسرة والمكفولين"],
     },
     faqs: [
       {
         q: { en: "What is the timeline for a Golden Visa?", ar: "ما هو الوقت المستغرق للحصول على الإقامة الذهبية؟" },
-        a: { en: "Once all parameters are validated, approval typically takes between 7 to 15 business days.", ar: "بمجرد التحقق من جميع المعايير، تستغرق الموافقة عادةً ما بين 7 إلى 15 يوم عمل." }
+        a: { en: "Once all parameters are validated, approval typically takes between 7 to 15 business days.", ar: "بمجرد التحقق واستيفاء كافة المعايير المطلوبة، تستغرق الموافقة والإصدار عادةً ما بين 7 إلى 15 يوم عمل." }
       }
     ]
   },
   {
     id: "tax-return",
     icon: Percent,
-    title: { en: "Tax Return Preparation", ar: "إعداد الإقرارات الضريبية" },
+    title: { en: "Tax Return Preparation", ar: "إعداد الإقرارات والامتثال الضريبي" },
     desc: {
       en: "VAT compliance, corporate tax filing, and auditing support.",
-      ar: "الامتثال لضريبة القيمة المضافة، تقديم ضريبة الشركات، ودعم التدقيق.",
+      ar: "الامتثال لضريبة الشركات وضريبة القيمة المضافة ودعم التدقيق المالي.",
     },
     details: {
       en: "With corporate tax now active in the UAE, our experts verify accounting structures, file periodic VAT reports, and establish compliant bookkeeping standards to prevent heavy administrative fines.",
-      ar: "مع تفعيل ضريبة الشركات في الإمارات، يتحقق خبراؤنا من الهياكل المحاسبية، ويقدمون تقارير الضريبة الدورية، ويؤسسون معايير مسك دفاتر متوافقة لتجنب الغرامات.",
+      ar: "مع سريان ضريبة الشركات في دولة الإمارات، يدعم خبراؤنا تهيئة الهياكل المحاسبية وإعداد وتقديم إقرارات ضريبة القيمة المضافة وضريبة الشركات لتجنب أية غرامات أو مخالفات إدارية من الهيئة الاتحادية للضرائب.",
     },
     benefits: {
       en: ["Corporate Tax ready auditing check", "VAT returns filing accuracy", "Prevention of administrative tax fines"],
-      ar: ["التدقيق والتهيئة لضريبة الشركات", "دقة تقديم إقرارات ضريبة القيمة المضافة", "تجنب الغرامات الإدارية الصارمة للضرائب"],
+      ar: ["تهيئة وتدقيق الحسابات للتوافق مع ضريبة الشركات", "دقة متناهية في تقديم إقرارات ضريبة القيمة المضافة", "تفادي الغرامات والمخالفات الإدارية الضريبية بالكامل"],
     },
     faqs: [
       {
-        q: { en: "When must I register for Corporate Tax?", ar: "متى يجب علي التسجيل لضريبة الشركات؟" },
-        a: { en: "All taxable persons must register within the deadlines set by the FTA based on license issue dates.", ar: "يجب على جميع الأشخاص الخاضعين للضريبة التسجيل ضمن المواعيد التي تحددها الهيئة بناءً على تاريخ إصدار الرخصة." }
+        q: { en: "When must I register for Corporate Tax?", ar: "متى يجب علي التسجيل لضريبة الشركات? " },
+        a: { en: "All taxable persons must register within the deadlines set by the FTA based on license issue dates.", ar: "يجب على الخاضعين للضريبة التسجيل ضمن المواعيد المحددة من الهيئة الاتحادية للضرائب بناءً على تاريخ إصدار الرخصة التجارية." }
       }
     ]
   },

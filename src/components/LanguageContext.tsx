@@ -19,7 +19,7 @@ export const translations: TranslationDictionary = {
   },
   nav_brand_sub: {
     en: "Legal & Business Consultancy",
-    ar: "للاستشارات القانونية والتحصيل",
+    ar: "للاستشارات القانونية والخدمات التجارية",
   },
   nav_home: {
     en: "Home",
@@ -43,7 +43,7 @@ export const translations: TranslationDictionary = {
   },
   nav_insights: {
     en: "Insights",
-    ar: "المعرفة",
+    ar: "المركز المعرفي",
   },
   nav_contact: {
     en: "Contact",
@@ -57,15 +57,15 @@ export const translations: TranslationDictionary = {
   // Hero Section
   hero_headline: {
     en: "Strategic Legal Solutions for Businesses & Individuals",
-    ar: "حلول قانونية استراتيجية للشركات والأفراد",
+    ar: "حلول قانونية استراتيجية متكاملة للشركات والأفراد",
   },
   hero_subheadline: {
     en: "Experts for Legal Consultations & Debt Collection provides premium legal advisory, debt recovery, commercial brokerage, and business consulting services designed to protect businesses, recover financial rights, and support long-term growth across the United Arab Emirates.",
-    ar: "تقدم شركة الخبراء للاستشارات القانونية وتحصيل الديون خدمات استشارية قانونية متميزة، تحصيل الديون، الوساطة التجارية، والاستشارات الأعمال المصممة لحماية الأعمال، واسترداد الحقوق المالية، ودعم النمو طويل الأجل في جميع أنحاء دولة الإمارات العربية المتحدة.",
+    ar: "تقدم شركة الخبراء للاستشارات القانونية وتحصيل الديون خدمات استشارية قانونية متميزة، وتحصيل الديون، والوساطة التجارية، واستشارات الأعمال المصممة لحماية المؤسسات، واسترداد الحقوق المالية، ودعم النمو طويل الأجل في جميع أنحاء دولة الإمارات العربية المتحدة.",
   },
   hero_cta_book: {
     en: "Book a Consultation",
-    ar: "حجز جلسة استشارة",
+    ar: "حجز استشارة",
   },
   hero_cta_explore: {
     en: "Explore Our Services",
@@ -73,17 +73,17 @@ export const translations: TranslationDictionary = {
   },
   hero_fee_note: {
     en: "Professional consultations are provided by appointment and subject to consultation fees.",
-    ar: "تُقدم الاستشارات المهنية بموجب موعد مسبق وتخضع لرسوم استشارية.",
+    ar: "تُقدم الاستشارات القانونية والتجارية بموجب موعد مسبق وتخضع لرسوم استشارية.",
   },
 
   // Highlights
   highlight_1_title: {
     en: "Licensed UAE Company",
-    ar: "شركة مرخصة في دولة الإمارات",
+    ar: "منشأة مرخصة في دولة الإمارات",
   },
   highlight_1_desc: {
     en: "Fully authorized corporate legal & business consultancy operating under UAE regulations.",
-    ar: "مكتب استشارات قانونية وتجارية مرخص بالكامل ويعمل بموجب قوانين دولة الإمارات.",
+    ar: "شركة استشارات قانونية وتجارية مرخصة بالكامل وتعمل وفق الأنظمة والقوانين المعمول بها في دولة الإمارات.",
   },
   highlight_2_title: {
     en: "Professional Experts",
@@ -91,45 +91,45 @@ export const translations: TranslationDictionary = {
   },
   highlight_2_desc: {
     en: "A multi-disciplinary team combining legal expertise with business intelligence.",
-    ar: "فريق متعدد التخصصات يجمع بين الخبرة القانونية والذكاء التجاري.",
+    ar: "فريق عمل متعدد التخصصات يجمع بين الخبرة القانونية الواسعة والذكاء التجاري والمالي.",
   },
   highlight_3_title: {
     en: "Confidential Consultations",
-    ar: "استشارات سرية للغاية",
+    ar: "سرية مهنية وقانونية مطلقة",
   },
   highlight_3_desc: {
     en: "Your data and corporate strategy are secured with strict professional privilege.",
-    ar: "بياناتك واستراتيجيتك الاستثمارية محمية بأعلى مستويات السرية المهنية.",
+    ar: "بيانات عملائنا واستراتيجياتهم الاستثمارية محمية بموجب مبادئ السرية المهنية والقانونية الصارمة.",
   },
   highlight_4_title: {
     en: "Fast Response Time",
-    ar: "سرعة الاستجابة والمتابعة",
+    ar: "السرعة في الاستجابة والمتابعة",
   },
   highlight_4_desc: {
     en: "Rapid evaluation of cases and queries with active status updates.",
-    ar: "تقييم سريع للقضايا والاستفسارات مع تحديثات نشطة وحيوية.",
+    ar: "التقييم الفوري للقضايا والاستفسارات وتزويدكم بالتقارير الدورية عن حالة الطلب.",
   },
   highlight_5_title: {
     en: "Business-Focused",
-    ar: "حلول موجهة لقطاع الأعمال",
+    ar: "حلول قانونية وتجارية موجهة للأعمال",
   },
   highlight_5_desc: {
     en: "We align legal frameworks with your corporate goals to maximize success.",
-    ar: "نحن نوائم الأطر القانونية مع أهداف شركتك لتحقيق أقصى قدر من النجاح.",
+    ar: "نعمل على مواءمة الأطر القانونية مع الأهداف الاستراتيجية لشركتكم لضمان تحقيق أعلى معدلات النجاح.",
   },
 
   // Services
   services_title: {
     en: "Our Professional Services",
-    ar: "خدماتنا المهنية",
+    ar: "خدماتنا المهنية المتكاملة",
   },
   services_subtitle: {
     en: "Comprehensive legal tech, debt recovery, and business advisory solutions tailored for the UAE market.",
-    ar: "حلول متكاملة في التكنولوجيا القانونية واسترداد الديون واستشارات الأعمال المصممة خصيصاً لسوق دولة الإمارات.",
+    ar: "حلول متكاملة في التكنولوجيا القانونية واسترداد الديون واستشارات الأعمال المصممة خصيصاً لسوق دولة الإمارات العربية المتحدة.",
   },
   service_learn_more: {
     en: "Learn More",
-    ar: "اقرأ المزيد",
+    ar: "الاطلاع على التفاصيل",
   },
   service_close: {
     en: "Close Detail",
@@ -139,11 +139,11 @@ export const translations: TranslationDictionary = {
   // Why Choose Us
   why_title: {
     en: "Redefining Legal & Business Consulting",
-    ar: "إعادة تعريف الاستشارات القانونية والأعمال",
+    ar: "إعادة تعريف الاستشارات القانونية والتجارية للأعمال",
   },
   why_subtitle: {
     en: "How we deliver modern, strategic value compared to traditional law office structures.",
-    ar: "كيف نقدم قيمة استراتيجية حديثة مقارنة بهياكل المكاتب القانونية التقليدية.",
+    ar: "كيفية تقديم قيمة استراتيجية حديثة بالمقارنة مع هياكل ومكاتب المحاماة التقليدية.",
   },
   why_traditional_title: {
     en: "Traditional Legal Office",
@@ -155,61 +155,61 @@ export const translations: TranslationDictionary = {
   },
   why_trad_1: {
     en: "Reactive approach (responds only when dispute arises)",
-    ar: "نهج رد الفعل (يستجيب فقط عند حدوث النزاع)",
+    ar: "نهج قائم على رد الفعل (تقديم المساعدة فقط بعد نشوء النزاع)",
   },
   why_trad_2: {
     en: "Limited service scope (only legal, no business context)",
-    ar: "نطاق خدمات محدود (قانوني فقط، دون سياق تجاري)",
+    ar: "نطاق خدمات محدود (التركيز على الجوانب القانونية دون الربط بالسياق التجاري)",
   },
   why_trad_3: {
     en: "Manual, slow communication methods",
-    ar: "وسائل اتصال يدوية وبطيئة",
+    ar: "اعتماد قنوات اتصال تقليدية وبطيئة للمتابعة",
   },
   why_trad_4: {
     en: "Single specialty focus without cross-domain advisory",
-    ar: "التركيز على تخصص واحد دون استشارات متعددة المجالات",
+    ar: "التركيز على تخصص واحد دون تقديم استشارات وحلول متقاطعة المجالات",
   },
   why_exp_1: {
     en: "Strategic legal advisory & preventative counsel",
-    ar: "استشارات قانونية استراتيجية ووقائية استباقية",
+    ar: "تقديم الاستشارات القانونية الاستباقية والوقائية لتفادي المخاطر",
   },
   why_exp_2: {
     en: "Comprehensive business solutions (marketing, tax, setup)",
-    ar: "حلول أعمال شاملة (التسويق، الضرائب، التأسيس)",
+    ar: "حلول أعمال متكاملة تشمل التأسيس، والخدمات الضريبية، واللوجستية",
   },
   why_exp_3: {
     en: "Fast, modern digital communication platforms",
-    ar: "منصات اتصال رقمية حديثة وسريعة",
+    ar: "منصات اتصال رقمية ذكية وفورية تضمن سرعة المتابعة",
   },
   why_exp_4: {
     en: "Multi-disciplinary expertise under one premium platform",
-    ar: "خبرات متعددة التخصصات تحت منصة متميزة واحدة",
+    ar: "خبرات استشارية متعددة التخصصات تجمعها منصة متميزة واحدة",
   },
   why_exp_5: {
     en: "Client-focused, results-driven milestone management",
-    ar: "إدارة تركز على العميل وتوجه نحو تحقيق النتائج الملموسة",
+    ar: "إدارة تشغيلية تركز على تحقيق النتائج وتلبية تطلعات العميل",
   },
   why_exp_6: {
     en: "Licensed and trusted corporate provider in the UAE",
-    ar: "مزود مؤسسي مرخص وموثوق به في دولة الإمارات العربية المتحدة",
+    ar: "منشأة مرخصة وموثوقة لتقديم الخدمات المؤسسية في دولة الإمارات",
   },
 
   // How We Work
   work_title: {
     en: "Our Methodical Approach",
-    ar: "منهجية العمل والخطوات",
+    ar: "منهجية العمل والخطوات التنفيذية",
   },
   work_subtitle: {
     en: "Four clear steps leading from initial inquiry to structured execution and support.",
-    ar: "أربع خطوات واضحة تقود من الاستفسار الأولي إلى التنفيذ المنظم والدعم المستمر.",
+    ar: "أربع خطوات تنظيمية واضحة بدءاً من الاستفسار الأولي حتى التنفيذ والدعم المستمر.",
   },
   work_step_1: {
     en: "Book Your Consultation",
-    ar: "احجز جلستك الاستشارية",
+    ar: "حجز جلسة الاستشارة",
   },
   work_step_1_desc: {
     en: "Schedule a secure session online or in-office to state your parameters.",
-    ar: "حدد موعدًا لجلسة آمنة عبر الإنترنت أو في المكتب لتوضيح متطلباتك.",
+    ar: "تحديد موعد لجلسة استشارية آمنة في المكتب أو عبر قنوات الاتصال الرقمي لتحديد أبعاد قضيتكم.",
   },
   work_step_2: {
     en: "Case Evaluation & Assessment",
@@ -217,7 +217,7 @@ export const translations: TranslationDictionary = {
   },
   work_step_2_desc: {
     en: "Our specialists review your documents and verify legal standing.",
-    ar: "يقوم أخصائيونا بمراجعة مستنداتك والتحقق من الموقف القانوني بدقة.",
+    ar: "يقوم الأخصائيون بدراسة ومراجعة المستندات بدقة لتقييم الموقف القانوني.",
   },
   work_step_3: {
     en: "Strategic Planning & Advisory",
@@ -225,15 +225,15 @@ export const translations: TranslationDictionary = {
   },
   work_step_3_desc: {
     en: "We construct a comprehensive legal and commercial roadmap.",
-    ar: "نضع خارطة طريق قانونية وتجارية شاملة ومتكاملة.",
+    ar: "وضع خارطة طريق تنظيمية متكاملة تجمع بين الجوانب القانونية والتجارية.",
   },
   work_step_4: {
     en: "Execution & Ongoing Support",
-    ar: "التنفيذ العملي والدعم المستمر",
+    ar: "التنفيذ والدعم المستمر",
   },
   work_step_4_desc: {
     en: "We initiate recovery or consulting steps with continuous updates.",
-    ar: "نبدأ خطوات الاسترداد أو الاستشارات مع تقديم تقارير دورية.",
+    ar: "البدء الفوري في إجراءات التحصيل أو الاستشارات مع تزويدكم بتقارير دورية منتظمة.",
   },
 
   // Industries We Serve
@@ -243,41 +243,41 @@ export const translations: TranslationDictionary = {
   },
   ind_subtitle: {
     en: "Tailored regulatory and corporate expertise across core economic sectors.",
-    ar: "خبرة تنظيمية ومؤسسية مخصصة عبر القطاعات الاقتصادية الرئيسية.",
+    ar: "خبرة قانونية وتجارية وتنظيمية متكاملة لتلبية متطلبات مختلف القطاعات الاقتصادية.",
   },
 
   // Featured Practice Areas
   practice_title: {
     en: "Featured Practice Areas",
-    ar: "مجالات الممارسة المتخصصة",
+    ar: "مجالات الممارسة القانونية والتجارية",
   },
   practice_subtitle: {
     en: "Deep domain capability in legal operations and corporate structure.",
-    ar: "قدرة عالية الكفاءة في العمليات القانونية والهيكلة المؤسسية.",
+    ar: "خبرة متخصصة ومعرفة عميقة بالعمليات وهيكلة الشركات والأعمال.",
   },
 
   // Testimonials
   test_title: {
     en: "Trusted by Business Leaders",
-    ar: "ثقة قادة الأعمال والشركات",
+    ar: "شركاء النجاح وقادة الأعمال",
   },
   test_subtitle: {
     en: "What corporate clients and entrepreneurs say about our advisory speed and results.",
-    ar: "ما يقوله عملاء الشركات ورواد الأعمال عن سرعة استشاراتنا ونتائجنا.",
+    ar: "آراء عملائنا من الشركات ورواد الأعمال حول سرعة استجابتنا والنتائج التي نحققها.",
   },
 
   // Insights
   insights_title: {
     en: "Knowledge Center & Regulatory Insights",
-    ar: "مركز المعرفة والمستجدات التنظيمية",
+    ar: "المركز المعرفي والمستجدات التنظيمية",
   },
   insights_subtitle: {
     en: "Stay updated on the latest legal reforms, business regulations, and debt recovery insights in the UAE.",
-    ar: "ابق على اطلاع بأحدث الإصلاحات القانونية، ولوائح الأعمال، ورؤى تحصيل الديون في دولة الإمارات.",
+    ar: "ابق على اطلاع بأحدث التطورات التنظيمية واللوائح الاستثمارية وإرشادات تحصيل الديون في دولة الإمارات.",
   },
   insight_read_more: {
     en: "Read Article",
-    ar: "اقرأ المقال",
+    ar: "اقرأ المقال الكامل",
   },
   insight_min: {
     en: "min read",
@@ -291,7 +291,7 @@ export const translations: TranslationDictionary = {
   },
   booking_subtitle: {
     en: "Secure your session with our legal & corporate specialists. Fees apply.",
-    ar: "اضمن جلستك مع أخصائيي القانون والشركات لدينا. تطبق الرسوم.",
+    ar: "احجز جلستك الاستشارية الآن مع نخبة من أخصائيي القانون والأعمال. (تطبق الرسوم الاستشارية).",
   },
   booking_name: {
     en: "Full Name",
@@ -311,19 +311,19 @@ export const translations: TranslationDictionary = {
   },
   booking_type_legal: {
     en: "Legal Consultations",
-    ar: "استشارات قانونية",
+    ar: "الاستشارات القانونية",
   },
   booking_type_debt: {
     en: "Debt Collection & Recovery",
-    ar: "تحصيل واسترداد الديون",
+    ar: "تحصيل الديون واستردادها",
   },
   booking_type_corporate: {
     en: "Corporate Business Consultancy",
-    ar: "استشارات تأسيس وتطوير الشركات",
+    ar: "الاستشارات التجارية وتأسيس الشركات",
   },
   booking_type_contract: {
     en: "Contract Drafting & Review",
-    ar: "صياغة ومراجعة العقود",
+    ar: "صياغة ومراجعة العقود والاتفاقيات",
   },
   booking_date: {
     en: "Preferred Date",
@@ -331,15 +331,15 @@ export const translations: TranslationDictionary = {
   },
   booking_time: {
     en: "Preferred Time Window",
-    ar: "فترة الوقت المفضلة",
+    ar: "الفترة الزمنية المفضلة",
   },
   booking_msg: {
     en: "Brief Summary of Your Inquiry",
-    ar: "ملخص موجز لاستفسارك",
+    ar: "ملخص موجز لموضوع الاستفسار",
   },
   booking_note: {
     en: "Consultation fees apply. Our team will review your request, confirm your appointment slot, and provide secure payment details.",
-    ar: "تطبق رسوم الاستشارة. سيقوم فريقنا بمراجعة طلبك وتأكيد موعدك وتوفير تفاصيل الدفع الآمنة.",
+    ar: "تطبق الرسوم على الاستشارات الاستقصائية. سيقوم فريقنا بمراجعة طلبكم لتأكيد الموعد وتوفير تفاصيل الدفع الآمنة.",
   },
   booking_submit: {
     en: "Request Appointment",
@@ -347,7 +347,7 @@ export const translations: TranslationDictionary = {
   },
   booking_success: {
     en: "Inquiry Submitted Successfully. Our coordinator will reach out to you within 2 business hours.",
-    ar: "تم إرسال طلبك بنجاح. سيتواصل معك منسق الاستشارات لدينا في غضون ساعتي عمل.",
+    ar: "تم إرسال طلبكم بنجاح. سيتواصل معكم منسق الاستشارات لدينا لتأكيد الموعد في غضون ساعتي عمل.",
   },
 
   // Contact
@@ -357,11 +357,11 @@ export const translations: TranslationDictionary = {
   },
   contact_subtitle: {
     en: "Reach out via our digital channel or visit our central corporate suite.",
-    ar: "تواصل معنا عبر القنوات الرقمية أو تفضل بزيارة جناحنا الرئيسي.",
+    ar: "تواصلوا معنا عبر القنوات الرقمية المتاحة أو تفضلوا بزيارة جناحنا الرئيسي.",
   },
   contact_office_address: {
     en: "SPC Free Zone, Sheikh Mohammed Bin Zayed Road, Al Zahia, Sharjah, United Arab Emirates",
-    ar: "\"المنطقة الحرة لمدينة الشارقة للنشر\" (SPC Free Zone) - شارع محمد بن زايد - منطقة الزاهية",
+    ar: "\"المنطقة الحرة لمدينة الشارقة للنشر\" (SPC Free Zone) - شارع الشيخ محمد بن زايد - منطقة الزاهية، الشارقة، دولة الإمارات العربية المتحدة",
   },
   contact_phone: {
     en: "+971 50 295 4666",
@@ -373,21 +373,21 @@ export const translations: TranslationDictionary = {
   },
   contact_hours: {
     en: "Monday - Friday: 9:00 AM - 6:00 PM",
-    ar: "الاثنين - الجمعة: 9:00 صباحًا - 6:00 مساءً",
+    ar: "من الاثنين إلى الجمعة: من الساعة 9:00 صباحًا حتى 6:00 مساءً",
   },
   contact_send_msg: {
     en: "Send Message",
-    ar: "إرسال رسالة",
+    ar: "إرسال الرسالة",
   },
 
   // Footer
   footer_desc: {
     en: "Experts for Legal Consultations & Debt Collection is a modern LegalTech and corporate consulting firm licensed in the United Arab Emirates, delivering high-performance financial recovery and compliance solutions.",
-    ar: "الخبراء للاستشارات القانونية وتحصيل الديون هي شركة تكنولوجيا قانونية واستشارات شركات حديثة مرخصة في دولة الإمارات، تقدم حلول استرداد مالي وامتثال عالية الأداء.",
+    ar: "تعتبر الخبراء للاستشارات القانونية وتحصيل الديون منشأة رائدة وحديثة في تقديم خدمات التكنولوجيا القانونية واستشارات الأعمال والشركات، وتقديم حلول استرداد الحقوق المالية والامتثال بالدولة.",
   },
   footer_quick_links: {
     en: "Quick Navigation",
-    ar: "روابط سريعة",
+    ar: "روابط الانتقال السريع",
   },
   footer_privacy: {
     en: "Privacy Policy",
@@ -399,11 +399,11 @@ export const translations: TranslationDictionary = {
   },
   footer_newsletter: {
     en: "Subscribe to Legal Updates",
-    ar: "اشترك في المستجدات القانونية",
+    ar: "اشترك في المستجدات القانونية والتشريعية",
   },
   footer_newsletter_placeholder: {
     en: "Enter your email address",
-    ar: "أدخل بريدك الإلكتروني",
+    ar: "أدخل بريدك الإلكتروني للشركة",
   },
   footer_newsletter_btn: {
     en: "Subscribe",
@@ -411,7 +411,7 @@ export const translations: TranslationDictionary = {
   },
   footer_rights: {
     en: "All rights reserved. Experts for Legal Consultations & Debt Collection",
-    ar: "جميع الحقوق محفوظة. شركة الخبراء للاستشارات القانونية وتحصيل الديون",
+    ar: "جميع الحقوق محفوظة. الخبراء للاستشارات القانونية وتحصيل الديون",
   },
   footer_licensed: {
     en: "Licensed by the UAE Department of Economy & Tourism.",
@@ -424,19 +424,19 @@ export const translations: TranslationDictionary = {
   },
   about_title: {
     en: "Experts for Legal Consultations & Debt Collection",
-    ar: "شركة الخبراء للاستشارات القانونية وتحصيل الديون",
+    ar: "الخبراء للاستشارات القانونية وتحصيل الديون",
   },
   about_subtitle: {
     en: "Delivering modern LegalTech, professional debt recovery, and corporate advisory solutions across the UAE.",
-    ar: "تقديم حلول التكنولوجيا القانونية الحديثة، وتحصيل الديون المهني، واستشارات الشركات في الإمارات.",
+    ar: "تقديم أرقى حلول التكنولوجيا القانونية والوساطة التجارية وتحصيل الديون واستشارات الأعمال بالدولة.",
   },
   about_overview_title: {
     en: "Corporate Profile Overview",
-    ar: "نبذة عن ملف الشركة",
+    ar: "نبذة تعريفية عن المنشأة",
   },
   about_overview_text: {
     en: "Established in the United Arab Emirates, Experts for Legal Consultations & Debt Collection is a modern LegalTech and corporate consulting firm. We combine specialized legal expertise with robust financial intelligence, commercial brokerage, and business setup structures under a premium, digital-first corporate interface.",
-    ar: "تأسست شركة الخبراء للاستشارات القانونية وتحصيل الديون في دولة الإمارات العربية المتحدة، وهي شركة استشارات شركات وتكنولوجيا قانونية حديثة. نجمع بين الخبرة القانونية المتخصصة والذكاء المالي القوي، والوساطة التجارية، وهياكل تأسيس الأعمال تحت واجهة رقمية متميزة.",
+    ar: "تأسست شركة الخبراء للاستشارات القانونية وتحصيل الديون في دولة الإمارات العربية المتحدة كمنصة استشارية وتكنولوجية حديثة لخدمة قطاع الأعمال والشركات. ندمج بين التوجيه القانوني المتخصص وأدوات الذكاء المالي والوساطة التجارية وبناء الهياكل التشغيلية للمستثمرين من خلال واجهة رقمية متطورة.",
   },
   about_mission_title: {
     en: "Our Mission",
@@ -444,7 +444,7 @@ export const translations: TranslationDictionary = {
   },
   about_mission_desc: {
     en: "To secure the financial rights of our clients, safeguard corporate operations from regulatory risks, and deliver top-tier, multi-disciplinary consulting services with absolute professional confidentiality and compliance.",
-    ar: "تأمين الحقوق المالية لعملائنا، وحماية عمليات الشركات من المخاطر التنظيمية، وتقديم خدمات استشارية رفيعة المستوى ومتعددة التخصصات بسرية مهنية وامتثال مطلق.",
+    ar: "استرداد وتأمين الحقوق المالية والائتمانية لعملائنا، ووقاية أعمالهم من أية مخاطر تنظيمية، وتقديم خدمات استشارية متكاملة تحت مبادئ السرية المهنية المطلقة والامتثال الكامل للأنظمة المحلية.",
   },
   about_vision_title: {
     en: "Our Vision",
@@ -452,35 +452,35 @@ export const translations: TranslationDictionary = {
   },
   about_vision_desc: {
     en: "To stand as the leading LegalTech and debt recovery advisor in the Gulf region, driving innovation, fast digital resolutions, and premium commercial brokerage opportunities for international corporate investors.",
-    ar: "أن نكون المستشار الرائد في مجال التكنولوجيا القانونية وتحصيل الديون في منطقة الخليج، من خلال تحفيز الابتكار، والتسويات الرقمية السريعة، وفرص الوساطة التجارية المتميزة للمستثمرين.",
+    ar: "أن نكون الشريك الاستشاري والريادي الأبرز في تقديم حلول التكنولوجيا القانونية وتحصيل الديون في منطقة الخليج العربي، وتقديم أفضل الفرص الاستثمارية والوساطة التجارية للمستثمرين الدوليين.",
   },
   about_values_title: {
     en: "Our Core Values",
-    ar: "قيمنا الجوهرية",
+    ar: "قيمنا الأساسية",
   },
   about_value_1_title: {
     en: "Client-Centric Speed",
-    ar: "السرعة والتركيز على العميل",
+    ar: "السرعة وتلبية متطلبات العميل",
   },
   about_value_1_desc: {
     en: "We prioritize swift communication, proactive legal strategy, and active progress tracking.",
-    ar: "نحن نولي الأولوية للاتصال السريع، والاستراتيجية القانونية الاستباقية، والتتبع النشط للتقدم.",
+    ar: "نولي الأولوية المطلقة للاتصال الفوري والسرعة والحلول القانونية الوقائية والشفافية التامة في تتبع الحالات.",
   },
   about_value_2_title: {
     en: "Absolute Confidentiality",
-    ar: "السرية المطلقة والنزاهة",
+    ar: "السرية المطلقة والأمان",
   },
   about_value_2_desc: {
     en: "All client matters, corporate assets, and consultation details are locked under strict legal privilege.",
-    ar: "جميع شؤون العملاء، وأصول الشركات، وتفاصيل الاستشارات محمية بامتياز قانوني صارم.",
+    ar: "تخضع كافة شؤون وأصول وبيانات عملائنا واستشاراتهم لقواعد السرية والحصانة المهنية والقانونية الصارمة.",
   },
   about_value_3_title: {
     en: "Multi-Disciplinary Innovation",
-    ar: "الابتكار متعدد التخصصات",
+    ar: "الابتكار وتعدد التخصصات",
   },
   about_value_3_desc: {
     en: "Integrating marketing, tax readiness, logistics, and company setup into one central platform.",
-    ar: "دمج التسويق، والجاهزية الضريبية، والخدمات اللوجستية، وتأسيس الشركات في منصة مركزية واحدة.",
+    ar: "تقديم إطار خدماتي متكامل يجمع بين التأسيس، والامتثال الضريبي، والدعم اللوجستي، والوساطة التجارية.",
   },
   about_license_title: {
     en: "Official License & UAE Authorizations",
@@ -492,31 +492,31 @@ export const translations: TranslationDictionary = {
   },
   about_timeline_title: {
     en: "Our Corporate Journey",
-    ar: "رحلتنا المؤسسية",
+    ar: "المسار والنمو المؤسسي",
   },
   about_timeline_1_year: {
     en: "Phase 1: Foundation",
-    ar: "المرحلة الأولى: التأسيس",
+    ar: "المرحلة الأولى: التأسيس والنشأة",
   },
   about_timeline_1_desc: {
     en: "Authorized license establishment, setting up central office suites in Dubai and recruiting core legal specialists.",
-    ar: "الحصول على التراخيص الرسمية، وتأسيس المكاتب الرئيسية في دبي واستقطاب نخبة من أخصائيي القانون.",
+    ar: "استكمال التراخيص الرسمية وتجهيز مقراتنا الرئيسية واستقطاب نخبة من الكفاءات والأخصائيين الماليين والقانونيين.",
   },
   about_timeline_2_year: {
     en: "Phase 2: Expansion",
-    ar: "المرحلة الثانية: التوسع والنمو",
+    ar: "المرحلة الثانية: التوسع الاستراتيجي",
   },
   about_timeline_2_desc: {
     en: "Expanding practice areas to include commercial brokerage, tax return prep, logistics and setup services.",
-    ar: "توسيع مجالات الممارسة لتشمل الوساطة التجارية، وإعداد الإقرارات الضريبية، والخدمات اللوجستية وتأسيس الشركات.",
+    ar: "تطوير نطاق العمل ليشمل تقديم خدمات الوساطة التجارية، وإعداد الإقرارات الضريبية، والخدمات اللوجستية وتأسيس الأعمال.",
   },
   about_timeline_3_year: {
     en: "Phase 3: LegalTech Integration",
-    ar: "المرحلة الثالثة: دمج التكنولوجيا القانونية",
+    ar: "المرحلة الثالثة: الرقمنة والتكنولوجيا القانونية",
   },
   about_timeline_3_desc: {
     en: "Integrating active CRM case tracking, digital contract portals, golden visa support, and secure online consultation bookings.",
-    ar: "دمج أنظمة تتبع الحالات النشطة (CRM)، وبوابات العقود الرقمية، ودعم الإقامة الذهبية، وحجز الاستشارات الآمن عبر الإنترنت.",
+    ar: "دمج أنظمة المتابعة الرقمية (CRM) وبوابات إدارة الاتفاقيات، وتسهيل الإقامات الذهبية وحجوزات الاستشارات الذكية.",
   },
 };
 
