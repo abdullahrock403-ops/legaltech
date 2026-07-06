@@ -31,8 +31,8 @@ export default function Footer() {
             </p>
             <div className="text-xs text-slate-500 font-semibold uppercase tracking-wider">
               {isRtl 
-                ? "مرخص من دائرة الاقتصاد والسياحة في دولة الإمارات | رقم التسجيل: 4430091.01" 
-                : "Licensed by the UAE Department of Economy & Tourism | Reg No: 4430091.01"}
+                ? "مرخصة من مدينة الشارقة للنشر - هيئة المنطقة حرة | رقم التسجيل: 4430091.01" 
+                : "Licensed by Sharjah Publishing City - Free Zone Authority | Reg No: 4430091.01"}
             </div>
             
             {/* Social Icons */}
