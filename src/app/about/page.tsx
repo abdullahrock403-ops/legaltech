@@ -62,16 +62,16 @@ export default function AboutPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24 mt-20">
         {/* Company Overview & Business Philosophy */}
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <motion.div initial={{ opacity: 0, x: -35 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="space-y-6 lg:order-first order-last">
+          <motion.div initial={{ opacity: 0, x: -35 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="space-y-6 lg:order-first order-last max-w-3xl">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-900">{t("about_overview_title")}</h2>
-            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-light">
+            <p className="text-base sm:text-lg text-slate-700 dark:text-slate-200 leading-[1.8] font-light">
               {t("about_overview_text")}
             </p>
             <div className="p-6 bg-navy-900/5 dark:bg-gold-500/5 rounded-2xl border border-navy-900/5 dark:border-gold-500/10">
-              <h4 className="font-bold text-navy-900 dark:text-gold-500 mb-2">
+              <h4 className="text-lg sm:text-xl font-bold text-navy-900 dark:text-gold-500 mb-3">
                 {isRtl ? "فلسفة عملنا" : "Our Business Philosophy"}
               </h4>
-              <p className="text-sm text-slate-500 dark:text-slate-300 leading-relaxed font-light">
+              <p className="text-base text-slate-700 dark:text-slate-200 leading-[1.8] font-light">
                 {isRtl
                   ? "نحن نؤمن بأن الحماية القانونية لا ينبغي أن تعوق سرعة رواد الأعمال. من خلال تنسيق استشارات تأسيس الشركات، الامتثال للتسويق، الخدمات اللوجستية، تأشيرة الإقامة الذهبية، والاستعداد الضريبي تحت مظلة رقمية واحدة، فإننا نساعد الشركات على الأداء والنمو بثقة وأمان تام."
                   : "We believe legal safeguards should never block entrepreneurial speed. By coordinating corporate brokerage, marketing compliance, logistics, Golden Visa immigration, and tax readiness under one digital roof, we enable businesses to execute with speed and complete peace of mind."}

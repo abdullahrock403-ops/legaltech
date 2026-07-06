@@ -58,7 +58,7 @@ export default function Footer() {
           {/* COLUMN 2 — Quick Navigation */}
           <div className="space-y-6">
             <h4 className="text-sm font-bold uppercase tracking-wider text-gold-500">
-              {isRtl ? "الملاحة السريعة" : "QUICK NAVIGATION"}
+              {isRtl ? "روابط سريعة" : "QUICK NAVIGATION"}
             </h4>
             <ul className="space-y-4 text-sm text-slate-400">
               <li><Link href="/" className="hover:text-gold-500 transition-colors">{t("nav_home")}</Link></li>
@@ -76,7 +76,7 @@ export default function Footer() {
             <div className="space-y-4 text-sm text-slate-400">
               <div>
                 <span className="block text-xs font-bold text-gold-500/70 uppercase tracking-wider mb-1">
-                  {isRtl ? "عنوان الجناح" : "Suite Address"}
+                  {isRtl ? "عنوان المكتب" : "Suite Address"}
                 </span>
                 <span className="text-slate-300 font-light leading-relaxed">
                   {isRtl ? t("contact_office_address") : "SPC Free Zone, Sheikh Mohammed Bin Zayed Road, Al Zahia, Sharjah, United Arab Emirates"}
